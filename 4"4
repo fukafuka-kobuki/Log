@@ -1,0 +1,682 @@
+Compiled: INITIAL(0)
+Formula !InvalidEnd0 = (true U (!ArriveShipping.0.1 U (Finish & !ArriveShipping.0.1)))
+GBA 3 states 6 transitions
+Buchi automata:
+InvalidEnd0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Finish&!ArriveShipping.0.1 -> S1).
+Composition:
+InvalidEnd0 = Finish || ArriveShipping.0.1 || SYNC || InvalidEnd0
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 33584K
+Composed in 174ms
+After Tau elimination = 8 state
+Tau reduction ON
+InvalidEnd0 minimising...
+Minimised States: 5 in 0ms
+make DFA(InvalidEnd0)
+DFA(InvalidEnd0) has 3 states.
+Tau reduction ON
+InvalidEnd0 minimising...
+Minimised States: 3 in 1ms
+Formula !RePICK0 = (true U (Pick.0 & X [0].pick))
+GBA 3 states 4 transitions
+Buchi automata:
+RePICK0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Pick.0 -> S2),
+S2 =([0].pick -> S1).
+Composition:
+RePICK0 = Pick.0 || [0].pick || SYNC || RePICK0
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 15 Transitions: 34 Memory used: 28344K
+Composed in 127ms
+After Tau elimination = 7 state
+Tau reduction ON
+RePICK0 minimising....
+Minimised States: 4 in 1ms
+make DFA(RePICK0)
+DFA(RePICK0) has 4 states.
+Tau reduction ON
+RePICK0 minimising...
+Minimised States: 2 in 0ms
+Formula !RePUT0 = (true U (Put.0 & X [0].put))
+GBA 3 states 4 transitions
+Buchi automata:
+RePUT0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Put.0 -> S2),
+S2 =([0].put -> S1).
+Composition:
+RePUT0 = Put.0 || [0].put || SYNC || RePUT0
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 15 Transitions: 34 Memory used: 28584K
+Composed in 107ms
+After Tau elimination = 7 state
+Tau reduction ON
+RePUT0 minimising....
+Minimised States: 4 in 0ms
+make DFA(RePUT0)
+DFA(RePUT0) has 4 states.
+Tau reduction ON
+RePUT0 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidPUT0 = (true U Put.0)
+GBA 2 states 3 transitions
+Buchi automata:
+InvalidPUT0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Put.0 -> S1).
+Composition:
+InvalidPUT0 = Put.0 || SYNC || InvalidPUT0
+State Space:
+ 2 * 2 * 2 = 2 ** 3
+Composing...
+-- States: 8 Transitions: 21 Memory used: 28593K
+Composed in 112ms
+After Tau elimination = 4 state
+Tau reduction ON
+InvalidPUT0 minimising..
+Minimised States: 2 in 0ms
+make DFA(InvalidPUT0)
+DFA(InvalidPUT0) has 1 states.
+Tau reduction ON
+InvalidPUT0 minimising..
+Minimised States: 1 in 0ms
+Formula !ImidiatePick0 = (true U (ArriveStorage.0.1.1 & X !Pick.0))
+GBA 3 states 4 transitions
+Buchi automata:
+ImidiatePick0 = S0,
+S1 =(!Pick.0 -> S2),
+S2@ =(true -> S2),
+S0 =(true -> S0 |ArriveStorage.0.1.1 -> S1).
+Composition:
+ImidiatePick0 = ArriveStorage.0.1.1 || Pick.0 || SYNC || ImidiatePick0
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 30 Transitions: 138 Memory used: 28596K
+Composed in 128ms
+After Tau elimination = 14 state
+Tau reduction ON
+ImidiatePick0 minimising....
+Minimised States: 8 in 0ms
+make DFA(ImidiatePick0)
+DFA(ImidiatePick0) has 8 states.
+Tau reduction ON
+ImidiatePick0 minimising....
+Minimised States: 4 in 0ms
+Formula !InvalidReturn1 = (true U (FlagforTask1 & (!reset U (X [0].arriveInduction[1] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn1 = S0,
+S1@ =(true -> S1),
+S2 =([0].arriveInduction[1] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask1&!reset -> S2 |FlagforTask1&!reset -> S3).
+Composition:
+InvalidReturn1 = FlagforTask1 || [0].arriveInduction[1] || reset || SYNC || InvalidReturn1
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 28660K
+Composed in 125ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn1 minimising....
+Minimised States: 5 in 2ms
+make DFA(InvalidReturn1)
+DFA(InvalidReturn1) has 4 states.
+Tau reduction ON
+InvalidReturn1 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidReturn2 = (true U (FlagforTask2 & (!reset U (X [0].arrivePicking[1] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn2 = S0,
+S1@ =(true -> S1),
+S2 =([0].arrivePicking[1] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask2&!reset -> S2 |FlagforTask2&!reset -> S3).
+Composition:
+InvalidReturn2 = FlagforTask2 || [0].arrivePicking[1] || reset || SYNC || InvalidReturn2
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 28659K
+Composed in 119ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn2 minimising....
+Minimised States: 5 in 0ms
+make DFA(InvalidReturn2)
+DFA(InvalidReturn2) has 4 states.
+Tau reduction ON
+InvalidReturn2 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidReturn3 = (true U (FlagforTask3 & (!reset U (X [0].arriveShipping[1] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn3 = S0,
+S1@ =(true -> S1),
+S2 =([0].arriveShipping[1] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask3&!reset -> S2 |FlagforTask3&!reset -> S3).
+Composition:
+InvalidReturn3 = FlagforTask3 || [0].arriveShipping[1] || reset || SYNC || InvalidReturn3
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 28668K
+Composed in 126ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn3 minimising....
+Minimised States: 5 in 4ms
+make DFA(InvalidReturn3)
+DFA(InvalidReturn3) has 4 states.
+Tau reduction ON
+InvalidReturn3 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidArriveStation = (true U INVALID_STATION0.0)
+GBA 2 states 3 transitions
+Buchi automata:
+InvalidArriveStation = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |INVALID_STATION0.0 -> S1).
+Composition:
+InvalidArriveStation = INVALID_STATION0.0 || SYNC || InvalidArriveStation
+State Space:
+ 2 * 2 * 2 = 2 ** 3
+Composing...
+-- States: 8 Transitions: 129 Memory used: 28678K
+Composed in 134ms
+After Tau elimination = 4 state
+Tau reduction ON
+InvalidArriveStation minimising..
+Minimised States: 2 in 6ms
+make DFA(InvalidArriveStation)
+DFA(InvalidArriveStation) has 1 states.
+Tau reduction ON
+InvalidArriveStation minimising..
+Minimised States: 1 in 0ms
+Formula !GOAL02 = (true U ((!Pick.0 | !TaskFlag0) U (ArriveInduction.0.1 & (!Pick.0 | !TaskFlag0))))
+GBA 3 states 10 transitions
+Buchi automata:
+GOAL02 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveInduction.0.1&!Pick.0 -> S1 |ArriveInduction.0.1&!TaskFlag0 -> S1).
+Composition:
+GOAL02 = ArriveInduction.0.1 || TaskFlag0 || Pick.0 || SYNC || GOAL02
+State Space:
+ 2 * 2 * 2 * 2 * 2 = 2 ** 5
+Composing...
+-- States: 32 Transitions: 131 Memory used: 28511K
+Composed in 110ms
+After Tau elimination = 16 state
+Tau reduction ON
+GOAL02 minimising....
+Minimised States: 9 in 0ms
+make DFA(GOAL02)
+DFA(GOAL02) has 5 states.
+Tau reduction ON
+GOAL02 minimising....
+Minimised States: 5 in 0ms
+Formula !GOAL03 = (true U (!FlagforTask1 U (ArrivePicking.0.1 & !FlagforTask1)))
+GBA 3 states 6 transitions
+Buchi automata:
+GOAL03 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArrivePicking.0.1&!FlagforTask1 -> S1).
+Composition:
+GOAL03 = ArrivePicking.0.1 || FlagforTask1 || SYNC || GOAL03
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 28744K
+Composed in 105ms
+After Tau elimination = 8 state
+Tau reduction ON
+GOAL03 minimising...
+Minimised States: 3 in 10ms
+make DFA(GOAL03)
+DFA(GOAL03) has 2 states.
+Tau reduction ON
+GOAL03 minimising...
+Minimised States: 2 in 0ms
+Formula !GOAL04 = (true U (!FlagforTask2 U (ArriveShipping.0.1 & !FlagforTask2)))
+GBA 3 states 6 transitions
+Buchi automata:
+GOAL04 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveShipping.0.1&!FlagforTask2 -> S1).
+Composition:
+GOAL04 = ArriveShipping.0.1 || FlagforTask2 || SYNC || GOAL04
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 29022K
+Composed in 135ms
+After Tau elimination = 8 state
+Tau reduction ON
+GOAL04 minimising...
+Minimised States: 3 in 10ms
+make DFA(GOAL04)
+DFA(GOAL04) has 2 states.
+Tau reduction ON
+GOAL04 minimising...
+Minimised States: 2 in 0ms
+Composition:
+KivaCONT0 = INITIAL(0) || GOAL04 || InvalidReturn3 || RePUT0 || InvalidArriveStation || GOAL02 || InvalidReturn2 || InvalidEnd0 || GOAL03 || InvalidPUT0 || RePICK0 || ImidiatePick0 || InvalidReturn1
+State Space:
+ 198 * 2 * 2 * 2 * 1 * 5 * 2 * 3 * 2 * 1 * 2 * 4 * 2 = 2 ** 22
+Composing...
+-- States: 334 Transitions: 727 Memory used: 28537K
+Composed in 122ms
+Solving the LTS control problem.
+Environment states: 335
+Game states: 668
+Analysis time: 446ms.
+Controller [79] generated successfully.
+Compiled: KivaCONT0
+Compiled: INITIAL(1)
+Formula !InvalidEnd1 = (true U (!ArriveShipping.1.0 U (Finish & !ArriveShipping.1.0)))
+GBA 3 states 6 transitions
+Buchi automata:
+InvalidEnd1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Finish&!ArriveShipping.1.0 -> S1).
+Composition:
+InvalidEnd1 = Finish || ArriveShipping.1.0 || SYNC || InvalidEnd1
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 32871K
+Composed in 146ms
+After Tau elimination = 8 state
+Tau reduction ON
+InvalidEnd1 minimising...
+Minimised States: 5 in 5ms
+make DFA(InvalidEnd1)
+DFA(InvalidEnd1) has 3 states.
+Tau reduction ON
+InvalidEnd1 minimising...
+Minimised States: 3 in 0ms
+Formula !RePICK1 = (true U (Pick.1 & X [1].pick))
+GBA 3 states 4 transitions
+Buchi automata:
+RePICK1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Pick.1 -> S2),
+S2 =([1].pick -> S1).
+Composition:
+RePICK1 = Pick.1 || [1].pick || SYNC || RePICK1
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 15 Transitions: 34 Memory used: 31952K
+Composed in 111ms
+After Tau elimination = 7 state
+Tau reduction ON
+RePICK1 minimising....
+Minimised States: 4 in 0ms
+make DFA(RePICK1)
+DFA(RePICK1) has 4 states.
+Tau reduction ON
+RePICK1 minimising...
+Minimised States: 2 in 0ms
+Formula !RePUT1 = (true U (Put.1 & X [1].put))
+GBA 3 states 4 transitions
+Buchi automata:
+RePUT1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Put.1 -> S2),
+S2 =([1].put -> S1).
+Composition:
+RePUT1 = Put.1 || [1].put || SYNC || RePUT1
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 15 Transitions: 34 Memory used: 31961K
+Composed in 102ms
+After Tau elimination = 7 state
+Tau reduction ON
+RePUT1 minimising....
+Minimised States: 4 in 10ms
+make DFA(RePUT1)
+DFA(RePUT1) has 4 states.
+Tau reduction ON
+RePUT1 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidPUT1 = (true U Put.1)
+GBA 2 states 3 transitions
+Buchi automata:
+InvalidPUT1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |Put.1 -> S1).
+Composition:
+InvalidPUT1 = Put.1 || SYNC || InvalidPUT1
+State Space:
+ 2 * 2 * 2 = 2 ** 3
+Composing...
+-- States: 8 Transitions: 21 Memory used: 31973K
+Composed in 156ms
+After Tau elimination = 4 state
+Tau reduction ON
+InvalidPUT1 minimising..
+Minimised States: 2 in 0ms
+make DFA(InvalidPUT1)
+DFA(InvalidPUT1) has 1 states.
+Tau reduction ON
+InvalidPUT1 minimising..
+Minimised States: 1 in 0ms
+Formula !ImidiatePick1 = (true U (ArriveStorage.1.1.0 & X !Pick.1))
+GBA 3 states 4 transitions
+Buchi automata:
+ImidiatePick1 = S0,
+S1 =(!Pick.1 -> S2),
+S2@ =(true -> S2),
+S0 =(true -> S0 |ArriveStorage.1.1.0 -> S1).
+Composition:
+ImidiatePick1 = ArriveStorage.1.1.0 || Pick.1 || SYNC || ImidiatePick1
+State Space:
+ 2 * 2 * 2 * 4 = 2 ** 5
+Composing...
+-- States: 30 Transitions: 138 Memory used: 32101K
+Composed in 112ms
+After Tau elimination = 14 state
+Tau reduction ON
+ImidiatePick1 minimising....
+Minimised States: 8 in 0ms
+make DFA(ImidiatePick1)
+DFA(ImidiatePick1) has 8 states.
+Tau reduction ON
+ImidiatePick1 minimising....
+Minimised States: 4 in 0ms
+Formula !InvalidReturn11 = (true U (FlagforTask11 & (!reset U (X [1].arriveInduction[1] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn11 = S0,
+S1@ =(true -> S1),
+S2 =([1].arriveInduction[1] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask11&!reset -> S2 |FlagforTask11&!reset -> S3).
+Composition:
+InvalidReturn11 = FlagforTask11 || [1].arriveInduction[1] || reset || SYNC || InvalidReturn11
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 32033K
+Composed in 110ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn11 minimising....
+Minimised States: 5 in 0ms
+make DFA(InvalidReturn11)
+DFA(InvalidReturn11) has 4 states.
+Tau reduction ON
+InvalidReturn11 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidReturn12 = (true U (FlagforTask12 & (!reset U (X [1].arrivePicking[1] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn12 = S0,
+S1@ =(true -> S1),
+S2 =([1].arrivePicking[1] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask12&!reset -> S2 |FlagforTask12&!reset -> S3).
+Composition:
+InvalidReturn12 = FlagforTask12 || [1].arrivePicking[1] || reset || SYNC || InvalidReturn12
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 32037K
+Composed in 103ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn12 minimising....
+Minimised States: 5 in 3ms
+make DFA(InvalidReturn12)
+DFA(InvalidReturn12) has 4 states.
+Tau reduction ON
+InvalidReturn12 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidReturn13 = (true U (FlagforTask13 & (!reset U (X [1].arriveShipping[0] & !reset))))
+GBA 4 states 7 transitions
+Buchi automata:
+InvalidReturn13 = S0,
+S1@ =(true -> S1),
+S2 =([1].arriveShipping[0] -> S1),
+S3 =(!reset -> S2 |!reset -> S3),
+S0 =(true -> S0 |FlagforTask13&!reset -> S2 |FlagforTask13&!reset -> S3).
+Composition:
+InvalidReturn13 = FlagforTask13 || [1].arriveShipping[0] || reset || SYNC || InvalidReturn13
+State Space:
+ 2 * 2 * 2 * 2 * 5 = 2 ** 7
+Composing...
+-- States: 19 Transitions: 35 Memory used: 32174K
+Composed in 111ms
+After Tau elimination = 9 state
+Tau reduction ON
+InvalidReturn13 minimising....
+Minimised States: 5 in 0ms
+make DFA(InvalidReturn13)
+DFA(InvalidReturn13) has 4 states.
+Tau reduction ON
+InvalidReturn13 minimising...
+Minimised States: 2 in 0ms
+Formula !InvalidArriveStation1 = (true U INVALID_STATION1.1)
+GBA 2 states 3 transitions
+Buchi automata:
+InvalidArriveStation1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |INVALID_STATION1.1 -> S1).
+Composition:
+InvalidArriveStation1 = INVALID_STATION1.1 || SYNC || InvalidArriveStation1
+State Space:
+ 2 * 2 * 2 = 2 ** 3
+Composing...
+-- States: 8 Transitions: 129 Memory used: 32183K
+Composed in 123ms
+After Tau elimination = 4 state
+Tau reduction ON
+InvalidArriveStation1 minimising..
+Minimised States: 2 in 0ms
+make DFA(InvalidArriveStation1)
+DFA(InvalidArriveStation1) has 1 states.
+Tau reduction ON
+InvalidArriveStation1 minimising..
+Minimised States: 1 in 0ms
+Formula !GOAL12 = (true U ((!Pick.1 | !TaskFlag10) U (ArriveInduction.1.1 & (!Pick.1 | !TaskFlag10))))
+GBA 3 states 10 transitions
+Buchi automata:
+GOAL12 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveInduction.1.1&!Pick.1 -> S1 |ArriveInduction.1.1&!TaskFlag10 -> S1).
+Composition:
+GOAL12 = ArriveInduction.1.1 || TaskFlag10 || Pick.1 || SYNC || GOAL12
+State Space:
+ 2 * 2 * 2 * 2 * 2 = 2 ** 5
+Composing...
+-- States: 32 Transitions: 131 Memory used: 32231K
+Composed in 105ms
+After Tau elimination = 16 state
+Tau reduction ON
+GOAL12 minimising....
+Minimised States: 9 in 1ms
+make DFA(GOAL12)
+DFA(GOAL12) has 5 states.
+Tau reduction ON
+GOAL12 minimising....
+Minimised States: 5 in 0ms
+Formula !GOAL13 = (true U (!FlagforTask11 U (ArrivePicking.1.1 & !FlagforTask11)))
+GBA 3 states 6 transitions
+Buchi automata:
+GOAL13 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArrivePicking.1.1&!FlagforTask11 -> S1).
+Composition:
+GOAL13 = ArrivePicking.1.1 || FlagforTask11 || SYNC || GOAL13
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 32360K
+Composed in 109ms
+After Tau elimination = 8 state
+Tau reduction ON
+GOAL13 minimising...
+Minimised States: 3 in 0ms
+make DFA(GOAL13)
+DFA(GOAL13) has 2 states.
+Tau reduction ON
+GOAL13 minimising...
+Minimised States: 2 in 0ms
+Formula !GOAL14 = (true U (!FlagforTask12 U (ArriveShipping.1.0 & !FlagforTask12)))
+GBA 3 states 6 transitions
+Buchi automata:
+GOAL14 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveShipping.1.0&!FlagforTask12 -> S1).
+Composition:
+GOAL14 = ArriveShipping.1.0 || FlagforTask12 || SYNC || GOAL14
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 49 Memory used: 32248K
+Composed in 130ms
+After Tau elimination = 8 state
+Tau reduction ON
+GOAL14 minimising...
+Minimised States: 3 in 0ms
+make DFA(GOAL14)
+DFA(GOAL14) has 2 states.
+Tau reduction ON
+GOAL14 minimising...
+Minimised States: 2 in 0ms
+Composition:
+KivaCONT1 = INITIAL(1) || InvalidArriveStation1 || ImidiatePick1 || InvalidReturn11 || InvalidEnd1 || InvalidReturn12 || GOAL13 || GOAL12 || InvalidReturn13 || GOAL14 || InvalidPUT1 || RePUT1 || RePICK1
+State Space:
+ 198 * 1 * 4 * 2 * 3 * 2 * 2 * 5 * 2 * 2 * 1 * 2 * 2 = 2 ** 22
+Composing...
+-- States: 334 Transitions: 727 Memory used: 32179K
+Composed in 106ms
+Solving the LTS control problem.
+Environment states: 335
+Game states: 668
+Analysis time: 401ms.
+Controller [73] generated successfully.
+Compiled: KivaCONT1
+Composition:
+ALLCONT = ALLCONT.KivaCONT0 || ALLCONT.KivaCONT1
+State Space:
+ 79 * 73 = 2 ** 14
+Composing...
+-- States: 2525 Transitions: 5255 Memory used: 35173K
+Composed in 116ms
+Formula !StopConflict0T0 = (true U (ArriveStorage.0.0.0 & ArriveStorage.1.0.0))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict0T0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.0.0&ArriveStorage.1.0.0 -> S1).
+Composition:
+StopConflict0T0 = ArriveStorage.0.0.0 || ArriveStorage.1.0.0 || SYNC || StopConflict0T0
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 35378K
+Composed in 127ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict0T0 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict0T0)
+DFA(StopConflict0T0) has 3 states.
+Tau reduction ON
+StopConflict0T0 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict0T1 = (true U (ArriveStorage.0.0.1 & ArriveStorage.1.0.1))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict0T1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.0.1&ArriveStorage.1.0.1 -> S1).
+Composition:
+StopConflict0T1 = ArriveStorage.0.0.1 || ArriveStorage.1.0.1 || SYNC || StopConflict0T1
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 33638K
+Composed in 114ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict0T1 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict0T1)
+DFA(StopConflict0T1) has 3 states.
+Tau reduction ON
+StopConflict0T1 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict1T0 = (true U (ArriveStorage.0.1.0 & ArriveStorage.1.1.0))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict1T0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.1.0&ArriveStorage.1.1.0 -> S1).
+Composition:
+StopConflict1T0 = ArriveStorage.0.1.0 || ArriveStorage.1.1.0 || SYNC || StopConflict1T0
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 33657K
+Composed in 116ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict1T0 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict1T0)
+DFA(StopConflict1T0) has 3 states.
+Tau reduction ON
+StopConflict1T0 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict1T1 = (true U (ArriveStorage.0.1.1 & ArriveStorage.1.1.1))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict1T1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.1.1&ArriveStorage.1.1.1 -> S1).
+Composition:
+StopConflict1T1 = ArriveStorage.0.1.1 || ArriveStorage.1.1.1 || SYNC || StopConflict1T1
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 33677K
+Composed in 124ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict1T1 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict1T1)
+DFA(StopConflict1T1) has 3 states.
+Tau reduction ON
+StopConflict1T1 minimising...
+Minimised States: 3 in 0ms
+Composition:
+AllManager = ALLCONT || StopConflict0T0 || StopConflict0T1 || StopConflict1T1 || StopConflict1T0
+State Space:
+ 2525 * 3 * 3 * 3 * 3 = 2 ** 20
+Composing...
+-- States: 2347 Transitions: 4839 Memory used: 34198K
+Composed in 120ms
+Solving the LTS control problem.
+Environment states: 2348
+Game states: 2348
+Analysis time: 267ms.
+Controller [2173] generated successfully.
+
