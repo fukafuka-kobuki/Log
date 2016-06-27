@@ -10,8 +10,8 @@ InvalidEnd0 = Finish || ArriveShipping.0.1 || SYNC || InvalidEnd0
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 40074K
-Composed in 187ms
+-- States: 16 Transitions: 49 Memory used: 73492K
+Composed in 358ms
 After Tau elimination = 8 state
 Tau reduction ON
 InvalidEnd0 minimising...
@@ -33,8 +33,8 @@ RePICK0 = Pick.0 || [0].pick || SYNC || RePICK0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 32514K
-Composed in 148ms
+-- States: 15 Transitions: 34 Memory used: 43769K
+Composed in 166ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePICK0 minimising....
@@ -56,8 +56,8 @@ RePUT0 = Put.0 || [0].put || SYNC || RePUT0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 32820K
-Composed in 130ms
+-- States: 15 Transitions: 34 Memory used: 43822K
+Composed in 163ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePUT0 minimising....
@@ -66,7 +66,7 @@ make DFA(RePUT0)
 DFA(RePUT0) has 4 states.
 Tau reduction ON
 RePUT0 minimising...
-Minimised States: 2 in 0ms
+Minimised States: 2 in 1ms
 Formula !InvalidPUT0 = (true U Put.0)
 GBA 2 states 3 transitions
 Buchi automata:
@@ -78,12 +78,12 @@ InvalidPUT0 = Put.0 || SYNC || InvalidPUT0
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 21 Memory used: 32529K
-Composed in 119ms
+-- States: 8 Transitions: 21 Memory used: 43831K
+Composed in 161ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidPUT0 minimising..
-Minimised States: 2 in 1ms
+Minimised States: 2 in 0ms
 make DFA(InvalidPUT0)
 DFA(InvalidPUT0) has 1 states.
 Tau reduction ON
@@ -101,8 +101,8 @@ ImidiatePick0 = ArriveStorage.0.1.1 || Pick.0 || SYNC || ImidiatePick0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 30 Transitions: 138 Memory used: 32571K
-Composed in 129ms
+-- States: 30 Transitions: 138 Memory used: 43848K
+Composed in 165ms
 After Tau elimination = 14 state
 Tau reduction ON
 ImidiatePick0 minimising....
@@ -125,12 +125,12 @@ InvalidReturn1 = FlagforTask1 || [0].arriveInduction[1] || reset || SYNC || Inva
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 32633K
-Composed in 124ms
+-- States: 19 Transitions: 35 Memory used: 43952K
+Composed in 171ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn1 minimising....
-Minimised States: 5 in 0ms
+Minimised States: 5 in 4ms
 make DFA(InvalidReturn1)
 DFA(InvalidReturn1) has 4 states.
 Tau reduction ON
@@ -149,12 +149,12 @@ InvalidReturn2 = FlagforTask2 || [0].arrivePicking[1] || reset || SYNC || Invali
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 32630K
-Composed in 131ms
+-- States: 19 Transitions: 35 Memory used: 43926K
+Composed in 172ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn2 minimising....
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(InvalidReturn2)
 DFA(InvalidReturn2) has 4 states.
 Tau reduction ON
@@ -173,8 +173,8 @@ InvalidReturn3 = FlagforTask3 || [0].arriveShipping[1] || reset || SYNC || Inval
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 32630K
-Composed in 124ms
+-- States: 19 Transitions: 35 Memory used: 43931K
+Composed in 190ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn3 minimising....
@@ -195,12 +195,12 @@ InvalidArriveStation = INVALID_STATION0.0 || SYNC || InvalidArriveStation
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 309 Memory used: 32944K
-Composed in 118ms
+-- States: 8 Transitions: 1429 Memory used: 44089K
+Composed in 164ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidArriveStation minimising..
-Minimised States: 2 in 9ms
+Minimised States: 2 in 3ms
 make DFA(InvalidArriveStation)
 DFA(InvalidArriveStation) has 1 states.
 Tau reduction ON
@@ -217,12 +217,12 @@ GOAL02 = ArriveInduction.0.1 || TaskFlag0 || Pick.0 || SYNC || GOAL02
 State Space:
  2 * 2 * 2 * 2 * 2 = 2 ** 5
 Composing...
--- States: 32 Transitions: 131 Memory used: 33045K
-Composed in 137ms
+-- States: 32 Transitions: 131 Memory used: 44446K
+Composed in 167ms
 After Tau elimination = 16 state
 Tau reduction ON
 GOAL02 minimising....
-Minimised States: 9 in 0ms
+Minimised States: 9 in 1ms
 make DFA(GOAL02)
 DFA(GOAL02) has 5 states.
 Tau reduction ON
@@ -239,8 +239,8 @@ GOAL03 = ArrivePicking.0.1 || FlagforTask1 || SYNC || GOAL03
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 33002K
-Composed in 149ms
+-- States: 16 Transitions: 49 Memory used: 44115K
+Composed in 170ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL03 minimising...
@@ -261,8 +261,8 @@ GOAL04 = ArriveShipping.0.1 || FlagforTask2 || SYNC || GOAL04
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 32738K
-Composed in 149ms
+-- States: 16 Transitions: 49 Memory used: 44105K
+Composed in 174ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL04 minimising...
@@ -273,17 +273,17 @@ Tau reduction ON
 GOAL04 minimising...
 Minimised States: 2 in 0ms
 Composition:
-KivaCONT0 = INITIAL(0) || InvalidReturn1 || RePUT0 || InvalidEnd0 || ImidiatePick0 || GOAL02 || InvalidArriveStation || GOAL03 || InvalidPUT0 || GOAL04 || InvalidReturn3 || RePICK0 || InvalidReturn2
+KivaCONT0 = INITIAL(0) || InvalidReturn3 || InvalidReturn1 || InvalidPUT0 || GOAL03 || RePUT0 || GOAL04 || RePICK0 || GOAL02 || InvalidEnd0 || InvalidArriveStation || ImidiatePick0 || InvalidReturn2
 State Space:
- 513 * 2 * 2 * 3 * 4 * 5 * 1 * 2 * 1 * 2 * 2 * 2 * 2 = 2 ** 24
+ 2603 * 2 * 2 * 1 * 2 * 2 * 2 * 2 * 5 * 3 * 1 * 4 * 2 = 2 ** 26
 Composing...
--- States: 994 Transitions: 2179 Memory used: 32801K
-Composed in 134ms
+-- States: 5794 Transitions: 12739 Memory used: 81922K
+Composed in 177ms
 Solving the LTS control problem.
-Environment states: 995
-Game states: 1988
-Analysis time: 3311ms.
-Controller [109] generated successfully.
+Environment states: 5795
+Game states: 11588
+Analysis time: 637031ms.
+Controller [209] generated successfully.
 Compiled: KivaCONT0
 Compiled: INITIAL(1)
 Formula !InvalidEnd1 = (true U (!ArriveShipping.1.0 U (Finish & !ArriveShipping.1.0)))
@@ -297,12 +297,12 @@ InvalidEnd1 = Finish || ArriveShipping.1.0 || SYNC || InvalidEnd1
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 44619K
-Composed in 157ms
+-- States: 16 Transitions: 49 Memory used: 86870K
+Composed in 321ms
 After Tau elimination = 8 state
 Tau reduction ON
 InvalidEnd1 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(InvalidEnd1)
 DFA(InvalidEnd1) has 3 states.
 Tau reduction ON
@@ -320,8 +320,8 @@ RePICK1 = Pick.1 || [1].pick || SYNC || RePICK1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 38984K
-Composed in 139ms
+-- States: 15 Transitions: 34 Memory used: 53816K
+Composed in 187ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePICK1 minimising....
@@ -330,7 +330,7 @@ make DFA(RePICK1)
 DFA(RePICK1) has 4 states.
 Tau reduction ON
 RePICK1 minimising...
-Minimised States: 2 in 0ms
+Minimised States: 2 in 1ms
 Formula !RePUT1 = (true U (Put.1 & X [1].put))
 GBA 3 states 4 transitions
 Buchi automata:
@@ -343,8 +343,8 @@ RePUT1 = Put.1 || [1].put || SYNC || RePUT1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 39001K
-Composed in 139ms
+-- States: 15 Transitions: 34 Memory used: 53827K
+Composed in 198ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePUT1 minimising....
@@ -365,8 +365,8 @@ InvalidPUT1 = Put.1 || SYNC || InvalidPUT1
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 21 Memory used: 39010K
-Composed in 119ms
+-- States: 8 Transitions: 21 Memory used: 53836K
+Composed in 184ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidPUT1 minimising..
@@ -388,8 +388,8 @@ ImidiatePick1 = ArriveStorage.1.1.0 || Pick.1 || SYNC || ImidiatePick1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 30 Transitions: 138 Memory used: 39030K
-Composed in 117ms
+-- States: 30 Transitions: 138 Memory used: 53848K
+Composed in 183ms
 After Tau elimination = 14 state
 Tau reduction ON
 ImidiatePick1 minimising....
@@ -412,12 +412,12 @@ InvalidReturn11 = FlagforTask11 || [1].arriveInduction[1] || reset || SYNC || In
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 39090K
-Composed in 120ms
+-- States: 19 Transitions: 35 Memory used: 54053K
+Composed in 208ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn11 minimising....
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(InvalidReturn11)
 DFA(InvalidReturn11) has 4 states.
 Tau reduction ON
@@ -436,12 +436,12 @@ InvalidReturn12 = FlagforTask12 || [1].arrivePicking[1] || reset || SYNC || Inva
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 39091K
-Composed in 131ms
+-- States: 19 Transitions: 35 Memory used: 53900K
+Composed in 208ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn12 minimising....
-Minimised States: 5 in 0ms
+Minimised States: 5 in 8ms
 make DFA(InvalidReturn12)
 DFA(InvalidReturn12) has 4 states.
 Tau reduction ON
@@ -460,12 +460,12 @@ InvalidReturn13 = FlagforTask13 || [1].arriveShipping[0] || reset || SYNC || Inv
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 39108K
-Composed in 122ms
+-- States: 19 Transitions: 35 Memory used: 53901K
+Composed in 204ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn13 minimising....
-Minimised States: 5 in 10ms
+Minimised States: 5 in 2ms
 make DFA(InvalidReturn13)
 DFA(InvalidReturn13) has 4 states.
 Tau reduction ON
@@ -482,17 +482,17 @@ InvalidArriveStation1 = INVALID_STATION1.1 || SYNC || InvalidArriveStation1
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 309 Memory used: 39149K
-Composed in 136ms
+-- States: 8 Transitions: 1429 Memory used: 54112K
+Composed in 196ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidArriveStation1 minimising..
-Minimised States: 2 in 9ms
+Minimised States: 2 in 4ms
 make DFA(InvalidArriveStation1)
 DFA(InvalidArriveStation1) has 1 states.
 Tau reduction ON
 InvalidArriveStation1 minimising..
-Minimised States: 1 in 0ms
+Minimised States: 1 in 1ms
 Formula !GOAL12 = (true U ((!Pick.1 | !TaskFlag10) U (ArriveInduction.1.1 & (!Pick.1 | !TaskFlag10))))
 GBA 3 states 10 transitions
 Buchi automata:
@@ -504,8 +504,8 @@ GOAL12 = ArriveInduction.1.1 || TaskFlag10 || Pick.1 || SYNC || GOAL12
 State Space:
  2 * 2 * 2 * 2 * 2 = 2 ** 5
 Composing...
--- States: 32 Transitions: 131 Memory used: 39211K
-Composed in 133ms
+-- States: 32 Transitions: 131 Memory used: 54336K
+Composed in 194ms
 After Tau elimination = 16 state
 Tau reduction ON
 GOAL12 minimising....
@@ -526,12 +526,12 @@ GOAL13 = ArrivePicking.1.1 || FlagforTask11 || SYNC || GOAL13
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 39174K
-Composed in 115ms
+-- States: 16 Transitions: 49 Memory used: 54089K
+Composed in 188ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL13 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 3ms
 make DFA(GOAL13)
 DFA(GOAL13) has 2 states.
 Tau reduction ON
@@ -548,8 +548,8 @@ GOAL14 = ArriveShipping.1.0 || FlagforTask12 || SYNC || GOAL14
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 39170K
-Composed in 137ms
+-- States: 16 Transitions: 49 Memory used: 54483K
+Composed in 213ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL14 minimising...
@@ -560,25 +560,26 @@ Tau reduction ON
 GOAL14 minimising...
 Minimised States: 2 in 0ms
 Composition:
-KivaCONT1 = INITIAL(1) || InvalidReturn13 || InvalidReturn11 || InvalidEnd1 || GOAL13 || InvalidArriveStation1 || RePUT1 || GOAL12 || GOAL14 || InvalidPUT1 || RePICK1 || ImidiatePick1 || InvalidReturn12
+KivaCONT1 = INITIAL(1) || InvalidEnd1 || RePUT1 || InvalidReturn12 || GOAL14 || InvalidReturn13 || GOAL12 || ImidiatePick1 || RePICK1 || GOAL13 || InvalidPUT1 || InvalidArriveStation1 || InvalidReturn11
 State Space:
- 513 * 2 * 2 * 3 * 2 * 1 * 2 * 5 * 2 * 1 * 2 * 4 * 2 = 2 ** 24
+ 2603 * 3 * 2 * 2 * 2 * 2 * 5 * 4 * 2 * 2 * 1 * 1 * 2 = 2 ** 26
 Composing...
--- States: 994 Transitions: 2179 Memory used: 39443K
-Composed in 122ms
+-- States: 5794 Transitions: 12739 Memory used: 89501K
+Composed in 214ms
 Solving the LTS control problem.
-Environment states: 995
-Game states: 1988
-Analysis time: 3311ms.
-Controller [85] generated successfully.
+Environment states: 5795
+Game states: 11588
+Analysis time: 589009ms.
+Controller [125] generated successfully.
 Compiled: KivaCONT1
 Composition:
 ALLCONT = ALLCONT.KivaCONT0 || ALLCONT.KivaCONT1
 State Space:
- 109 * 85 = 2 ** 14
+ 209 * 125 = 2 ** 15
 Composing...
--- States: 4169 Transitions: 8837 Memory used: 57294K
-Composed in 192ms
+-- States: 10000 Transitions: 21468 Memory used: 202760K
+-- States: 12249 Transitions: 26497 Memory used: 239765K
+Composed in 401ms
 Formula !StopConflict0T0 = (true U (ArriveStorage.0.0.0 & ArriveStorage.1.0.0))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -590,8 +591,8 @@ StopConflict0T0 = ArriveStorage.0.0.0 || ArriveStorage.1.0.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 46083K
-Composed in 135ms
+-- States: 16 Transitions: 105 Memory used: 92716K
+Composed in 248ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T0 minimising...
@@ -612,8 +613,8 @@ StopConflict0T1 = ArriveStorage.0.0.1 || ArriveStorage.1.0.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 40796K
-Composed in 124ms
+-- States: 16 Transitions: 105 Memory used: 61454K
+Composed in 207ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T1 minimising...
@@ -634,12 +635,12 @@ StopConflict1T0 = ArriveStorage.0.1.0 || ArriveStorage.1.1.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 40807K
-Composed in 140ms
+-- States: 16 Transitions: 105 Memory used: 61474K
+Composed in 209ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T0 minimising...
-Minimised States: 5 in 3ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict1T0)
 DFA(StopConflict1T0) has 3 states.
 Tau reduction ON
@@ -656,8 +657,8 @@ StopConflict1T1 = ArriveStorage.0.1.1 || ArriveStorage.1.1.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 40836K
-Composed in 146ms
+-- States: 16 Transitions: 105 Memory used: 61620K
+Composed in 222ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T1 minimising...
@@ -666,17 +667,18 @@ make DFA(StopConflict1T1)
 DFA(StopConflict1T1) has 3 states.
 Tau reduction ON
 StopConflict1T1 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Composition:
-AllManager = ALLCONT || StopConflict0T1 || StopConflict1T1 || StopConflict0T0 || StopConflict1T0
+AllManager = ALLCONT || StopConflict1T1 || StopConflict0T0 || StopConflict0T1 || StopConflict1T0
 State Space:
- 4169 * 3 * 3 * 3 * 3 = 2 ** 21
+ 12249 * 3 * 3 * 3 * 3 = 2 ** 22
 Composing...
--- States: 3901 Transitions: 8193 Memory used: 56774K
-Composed in 150ms
+-- States: 10000 Transitions: 21377 Memory used: 172637K
+-- States: 11681 Transitions: 25093 Memory used: 197325K
+Composed in 268ms
 Solving the LTS control problem.
-Environment states: 3902
-Game states: 3902
-Analysis time: 411ms.
-Controller [3727] generated successfully.
+Environment states: 11682
+Game states: 11682
+Analysis time: 1139ms.
+Controller [11507] generated successfully.
 
