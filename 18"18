@@ -10,8 +10,8 @@ InvalidEnd0 = Finish || ArriveShipping.0.1 || SYNC || InvalidEnd0
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 115217K
-Composed in 504ms
+-- States: 16 Transitions: 49 Memory used: 126091K
+Composed in 536ms
 After Tau elimination = 8 state
 Tau reduction ON
 InvalidEnd0 minimising...
@@ -33,8 +33,8 @@ RePICK0 = Pick.0 || [0].pick || SYNC || RePICK0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 87728K
-Composed in 327ms
+-- States: 15 Transitions: 34 Memory used: 93806K
+Composed in 362ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePICK0 minimising....
@@ -56,8 +56,8 @@ RePUT0 = Put.0 || [0].put || SYNC || RePUT0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 85552K
-Composed in 327ms
+-- States: 15 Transitions: 34 Memory used: 93816K
+Composed in 359ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePUT0 minimising....
@@ -78,8 +78,8 @@ InvalidPUT0 = Put.0 || SYNC || InvalidPUT0
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 21 Memory used: 85557K
-Composed in 333ms
+-- States: 8 Transitions: 21 Memory used: 93322K
+Composed in 353ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidPUT0 minimising..
@@ -101,8 +101,8 @@ ImidiatePick0 = ArriveStorage.0.1.1 || Pick.0 || SYNC || ImidiatePick0
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 30 Transitions: 138 Memory used: 87770K
-Composed in 310ms
+-- States: 30 Transitions: 138 Memory used: 93848K
+Composed in 355ms
 After Tau elimination = 14 state
 Tau reduction ON
 ImidiatePick0 minimising....
@@ -125,8 +125,8 @@ InvalidReturn1 = FlagforTask1 || [0].arriveInduction[1] || reset || SYNC || Inva
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 87857K
-Composed in 314ms
+-- States: 19 Transitions: 35 Memory used: 93900K
+Composed in 353ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn1 minimising....
@@ -149,12 +149,12 @@ InvalidReturn2 = FlagforTask2 || [0].arrivePicking[1] || reset || SYNC || Invali
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 85651K
-Composed in 321ms
+-- States: 19 Transitions: 35 Memory used: 93899K
+Composed in 357ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn2 minimising....
-Minimised States: 5 in 6ms
+Minimised States: 5 in 0ms
 make DFA(InvalidReturn2)
 DFA(InvalidReturn2) has 4 states.
 Tau reduction ON
@@ -173,12 +173,12 @@ InvalidReturn3 = FlagforTask3 || [0].arriveShipping[1] || reset || SYNC || Inval
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 85689K
-Composed in 330ms
+-- States: 19 Transitions: 35 Memory used: 93918K
+Composed in 376ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn3 minimising....
-Minimised States: 5 in 3ms
+Minimised States: 5 in 0ms
 make DFA(InvalidReturn3)
 DFA(InvalidReturn3) has 4 states.
 Tau reduction ON
@@ -195,17 +195,17 @@ InvalidArriveStation = INVALID_STATION0.0 || SYNC || InvalidArriveStation
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 1429 Memory used: 88035K
-Composed in 353ms
+-- States: 8 Transitions: 1585 Memory used: 94079K
+Composed in 352ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidArriveStation minimising..
-Minimised States: 2 in 2ms
+Minimised States: 2 in 3ms
 make DFA(InvalidArriveStation)
 DFA(InvalidArriveStation) has 1 states.
 Tau reduction ON
 InvalidArriveStation minimising..
-Minimised States: 1 in 0ms
+Minimised States: 1 in 1ms
 Formula !GOAL02 = (true U ((!Pick.0 | !TaskFlag0) U (ArriveInduction.0.1 & (!Pick.0 | !TaskFlag0))))
 GBA 3 states 10 transitions
 Buchi automata:
@@ -217,8 +217,8 @@ GOAL02 = ArriveInduction.0.1 || TaskFlag0 || Pick.0 || SYNC || GOAL02
 State Space:
  2 * 2 * 2 * 2 * 2 = 2 ** 5
 Composing...
--- States: 32 Transitions: 131 Memory used: 88281K
-Composed in 318ms
+-- States: 32 Transitions: 131 Memory used: 94327K
+Composed in 363ms
 After Tau elimination = 16 state
 Tau reduction ON
 GOAL02 minimising....
@@ -239,8 +239,8 @@ GOAL03 = ArrivePicking.0.1 || FlagforTask1 || SYNC || GOAL03
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 88083K
-Composed in 316ms
+-- States: 16 Transitions: 49 Memory used: 94100K
+Composed in 359ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL03 minimising...
@@ -249,7 +249,7 @@ make DFA(GOAL03)
 DFA(GOAL03) has 2 states.
 Tau reduction ON
 GOAL03 minimising...
-Minimised States: 2 in 1ms
+Minimised States: 2 in 0ms
 Formula !GOAL04 = (true U (!FlagforTask2 U (ArriveShipping.0.1 & !FlagforTask2)))
 GBA 3 states 6 transitions
 Buchi automata:
@@ -261,8 +261,8 @@ GOAL04 = ArriveShipping.0.1 || FlagforTask2 || SYNC || GOAL04
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 88102K
-Composed in 322ms
+-- States: 16 Transitions: 49 Memory used: 94096K
+Composed in 343ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL04 minimising...
@@ -273,17 +273,17 @@ Tau reduction ON
 GOAL04 minimising...
 Minimised States: 2 in 0ms
 Composition:
-KivaCONT0 = INITIAL(0) || GOAL03 || InvalidArriveStation || GOAL04 || GOAL02 || InvalidReturn2 || InvalidPUT0 || RePUT0 || RePICK0 || InvalidReturn1 || ImidiatePick0 || InvalidEnd0 || InvalidReturn3
+KivaCONT0 = INITIAL(0) || RePICK0 || InvalidArriveStation || InvalidEnd0 || GOAL03 || InvalidReturn2 || InvalidReturn1 || ImidiatePick0 || RePUT0 || InvalidReturn3 || GOAL04 || GOAL02 || InvalidPUT0
 State Space:
- 2603 * 2 * 1 * 2 * 5 * 2 * 1 * 2 * 2 * 2 * 4 * 3 * 2 = 2 ** 26
+ 2900 * 2 * 1 * 3 * 2 * 2 * 2 * 4 * 2 * 2 * 2 * 5 * 1 = 2 ** 26
 Composing...
--- States: 5794 Transitions: 12739 Memory used: 124677K
-Composed in 338ms
+-- States: 6494 Transitions: 14279 Memory used: 141080K
+Composed in 394ms
 Solving the LTS control problem.
-Environment states: 5795
-Game states: 11588
-Analysis time: 458814ms.
-Controller [209] generated successfully.
+Environment states: 6495
+Game states: 12988
+Analysis time: 658428ms.
+Controller [219] generated successfully.
 Compiled: KivaCONT0
 Compiled: INITIAL(1)
 Formula !InvalidEnd1 = (true U (!ArriveShipping.1.0 U (Finish & !ArriveShipping.1.0)))
@@ -297,8 +297,8 @@ InvalidEnd1 = Finish || ArriveShipping.1.0 || SYNC || InvalidEnd1
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 145738K
-Composed in 541ms
+-- States: 16 Transitions: 49 Memory used: 149875K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 InvalidEnd1 minimising...
@@ -320,8 +320,8 @@ RePICK1 = Pick.1 || [1].pick || SYNC || RePICK1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 112693K
-Composed in 386ms
+-- States: 15 Transitions: 34 Memory used: 112841K
+Composed in 402ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePICK1 minimising....
@@ -330,7 +330,7 @@ make DFA(RePICK1)
 DFA(RePICK1) has 4 states.
 Tau reduction ON
 RePICK1 minimising...
-Minimised States: 2 in 0ms
+Minimised States: 2 in 1ms
 Formula !RePUT1 = (true U (Put.1 & X [1].put))
 GBA 3 states 4 transitions
 Buchi automata:
@@ -343,12 +343,12 @@ RePUT1 = Put.1 || [1].put || SYNC || RePUT1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 15 Transitions: 34 Memory used: 112700K
-Composed in 378ms
+-- States: 15 Transitions: 34 Memory used: 112845K
+Composed in 375ms
 After Tau elimination = 7 state
 Tau reduction ON
 RePUT1 minimising....
-Minimised States: 4 in 0ms
+Minimised States: 4 in 1ms
 make DFA(RePUT1)
 DFA(RePUT1) has 4 states.
 Tau reduction ON
@@ -365,8 +365,8 @@ InvalidPUT1 = Put.1 || SYNC || InvalidPUT1
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 21 Memory used: 112706K
-Composed in 327ms
+-- States: 8 Transitions: 21 Memory used: 112852K
+Composed in 382ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidPUT1 minimising..
@@ -388,8 +388,8 @@ ImidiatePick1 = ArriveStorage.1.1.0 || Pick.1 || SYNC || ImidiatePick1
 State Space:
  2 * 2 * 2 * 4 = 2 ** 5
 Composing...
--- States: 30 Transitions: 138 Memory used: 112724K
-Composed in 314ms
+-- States: 30 Transitions: 138 Memory used: 112868K
+Composed in 395ms
 After Tau elimination = 14 state
 Tau reduction ON
 ImidiatePick1 minimising....
@@ -412,12 +412,12 @@ InvalidReturn11 = FlagforTask11 || [1].arriveInduction[1] || reset || SYNC || In
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 112786K
-Composed in 337ms
+-- States: 19 Transitions: 35 Memory used: 112922K
+Composed in 383ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn11 minimising....
-Minimised States: 5 in 2ms
+Minimised States: 5 in 0ms
 make DFA(InvalidReturn11)
 DFA(InvalidReturn11) has 4 states.
 Tau reduction ON
@@ -436,12 +436,12 @@ InvalidReturn12 = FlagforTask12 || [1].arrivePicking[1] || reset || SYNC || Inva
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 112786K
-Composed in 331ms
+-- States: 19 Transitions: 35 Memory used: 112918K
+Composed in 383ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn12 minimising....
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(InvalidReturn12)
 DFA(InvalidReturn12) has 4 states.
 Tau reduction ON
@@ -460,8 +460,8 @@ InvalidReturn13 = FlagforTask13 || [1].arriveShipping[0] || reset || SYNC || Inv
 State Space:
  2 * 2 * 2 * 2 * 5 = 2 ** 7
 Composing...
--- States: 19 Transitions: 35 Memory used: 112804K
-Composed in 345ms
+-- States: 19 Transitions: 35 Memory used: 112944K
+Composed in 379ms
 After Tau elimination = 9 state
 Tau reduction ON
 InvalidReturn13 minimising....
@@ -482,8 +482,8 @@ InvalidArriveStation1 = INVALID_STATION1.1 || SYNC || InvalidArriveStation1
 State Space:
  2 * 2 * 2 = 2 ** 3
 Composing...
--- States: 8 Transitions: 1429 Memory used: 112963K
-Composed in 321ms
+-- States: 8 Transitions: 1585 Memory used: 113117K
+Composed in 389ms
 After Tau elimination = 4 state
 Tau reduction ON
 InvalidArriveStation1 minimising..
@@ -504,8 +504,8 @@ GOAL12 = ArriveInduction.1.1 || TaskFlag10 || Pick.1 || SYNC || GOAL12
 State Space:
  2 * 2 * 2 * 2 * 2 = 2 ** 5
 Composing...
--- States: 32 Transitions: 131 Memory used: 113169K
-Composed in 322ms
+-- States: 32 Transitions: 131 Memory used: 113363K
+Composed in 385ms
 After Tau elimination = 16 state
 Tau reduction ON
 GOAL12 minimising....
@@ -514,7 +514,7 @@ make DFA(GOAL12)
 DFA(GOAL12) has 5 states.
 Tau reduction ON
 GOAL12 minimising....
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 Formula !GOAL13 = (true U (!FlagforTask11 U (ArrivePicking.1.1 & !FlagforTask11)))
 GBA 3 states 6 transitions
 Buchi automata:
@@ -526,8 +526,8 @@ GOAL13 = ArrivePicking.1.1 || FlagforTask11 || SYNC || GOAL13
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 112970K
-Composed in 332ms
+-- States: 16 Transitions: 49 Memory used: 113136K
+Composed in 385ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL13 minimising...
@@ -548,8 +548,8 @@ GOAL14 = ArriveShipping.1.0 || FlagforTask12 || SYNC || GOAL14
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 49 Memory used: 112965K
-Composed in 320ms
+-- States: 16 Transitions: 49 Memory used: 113126K
+Composed in 380ms
 After Tau elimination = 8 state
 Tau reduction ON
 GOAL14 minimising...
@@ -560,26 +560,26 @@ Tau reduction ON
 GOAL14 minimising...
 Minimised States: 2 in 0ms
 Composition:
-KivaCONT1 = INITIAL(1) || InvalidReturn12 || RePUT1 || GOAL13 || ImidiatePick1 || GOAL14 || InvalidArriveStation1 || InvalidReturn13 || InvalidPUT1 || InvalidEnd1 || GOAL12 || InvalidReturn11 || RePICK1
+KivaCONT1 = INITIAL(1) || InvalidReturn12 || InvalidReturn11 || RePICK1 || GOAL14 || InvalidArriveStation1 || ImidiatePick1 || GOAL12 || RePUT1 || GOAL13 || InvalidPUT1 || InvalidReturn13 || InvalidEnd1
 State Space:
- 2603 * 2 * 2 * 2 * 4 * 2 * 1 * 2 * 1 * 3 * 5 * 2 * 2 = 2 ** 26
+ 2900 * 2 * 2 * 2 * 2 * 1 * 4 * 5 * 2 * 2 * 1 * 2 * 3 = 2 ** 26
 Composing...
--- States: 5794 Transitions: 12739 Memory used: 141918K
-Composed in 369ms
+-- States: 6494 Transitions: 14279 Memory used: 148653K
+Composed in 408ms
 Solving the LTS control problem.
-Environment states: 5795
-Game states: 11588
-Analysis time: 477579ms.
-Controller [125] generated successfully.
+Environment states: 6495
+Game states: 12988
+Analysis time: 635447ms.
+Controller [129] generated successfully.
 Compiled: KivaCONT1
 Composition:
 ALLCONT = ALLCONT.KivaCONT0 || ALLCONT.KivaCONT1
 State Space:
- 209 * 125 = 2 ** 15
+ 219 * 129 = 2 ** 16
 Composing...
--- States: 10000 Transitions: 21468 Memory used: 243369K
--- States: 12249 Transitions: 26497 Memory used: 273545K
-Composed in 493ms
+-- States: 10000 Transitions: 21487 Memory used: 282101K
+-- States: 13277 Transitions: 28747 Memory used: 331687K
+Composed in 797ms
 Formula !StopConflict0T0 = (true U (ArriveStorage.0.0.0 & ArriveStorage.1.0.0))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -591,8 +591,8 @@ StopConflict0T0 = ArriveStorage.0.0.0 || ArriveStorage.1.0.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 123652K
-Composed in 401ms
+-- States: 16 Transitions: 105 Memory used: 159095K
+Composed in 632ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T0 minimising...
@@ -613,12 +613,12 @@ StopConflict0T1 = ArriveStorage.0.0.1 || ArriveStorage.1.0.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92483K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124162K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T1 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict0T1)
 DFA(StopConflict0T1) has 3 states.
 Tau reduction ON
@@ -635,12 +635,12 @@ StopConflict0T2 = ArriveStorage.0.0.2 || ArriveStorage.1.0.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92786K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 124182K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T2 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict0T2)
 DFA(StopConflict0T2) has 3 states.
 Tau reduction ON
@@ -657,12 +657,12 @@ StopConflict0T3 = ArriveStorage.0.0.3 || ArriveStorage.1.0.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92528K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 124201K
+Composed in 569ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T3 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict0T3)
 DFA(StopConflict0T3) has 3 states.
 Tau reduction ON
@@ -679,8 +679,8 @@ StopConflict0T4 = ArriveStorage.0.0.4 || ArriveStorage.1.0.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92548K
-Composed in 336ms
+-- States: 16 Transitions: 105 Memory used: 123996K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T4 minimising...
@@ -701,8 +701,8 @@ StopConflict0T5 = ArriveStorage.0.0.5 || ArriveStorage.1.0.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92567K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124233K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T5 minimising...
@@ -723,12 +723,12 @@ StopConflict0T6 = ArriveStorage.0.0.6 || ArriveStorage.1.0.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92584K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 124246K
+Composed in 534ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T6 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict0T6)
 DFA(StopConflict0T6) has 3 states.
 Tau reduction ON
@@ -745,8 +745,8 @@ StopConflict1T0 = ArriveStorage.0.1.0 || ArriveStorage.1.1.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92602K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 124263K
+Composed in 541ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T0 minimising...
@@ -767,12 +767,12 @@ StopConflict1T1 = ArriveStorage.0.1.1 || ArriveStorage.1.1.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92666K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124281K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T1 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict1T1)
 DFA(StopConflict1T1) has 3 states.
 Tau reduction ON
@@ -789,8 +789,8 @@ StopConflict1T2 = ArriveStorage.0.1.2 || ArriveStorage.1.1.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92646K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 124295K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T2 minimising...
@@ -811,12 +811,12 @@ StopConflict1T3 = ArriveStorage.0.1.3 || ArriveStorage.1.1.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92632K
-Composed in 390ms
+-- States: 16 Transitions: 105 Memory used: 124318K
+Composed in 571ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T3 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict1T3)
 DFA(StopConflict1T3) has 3 states.
 Tau reduction ON
@@ -833,12 +833,12 @@ StopConflict1T4 = ArriveStorage.0.1.4 || ArriveStorage.1.1.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92698K
-Composed in 334ms
+-- States: 16 Transitions: 105 Memory used: 124147K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T4 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict1T4)
 DFA(StopConflict1T4) has 3 states.
 Tau reduction ON
@@ -855,8 +855,8 @@ StopConflict1T5 = ArriveStorage.0.1.5 || ArriveStorage.1.1.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92678K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 124314K
+Composed in 584ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T5 minimising...
@@ -877,8 +877,8 @@ StopConflict1T6 = ArriveStorage.0.1.6 || ArriveStorage.1.1.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92697K
-Composed in 327ms
+-- States: 16 Transitions: 105 Memory used: 124324K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T6 minimising...
@@ -899,8 +899,8 @@ StopConflict2T0 = ArriveStorage.0.2.0 || ArriveStorage.1.2.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92716K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 124561K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T0 minimising...
@@ -921,8 +921,8 @@ StopConflict2T1 = ArriveStorage.0.2.1 || ArriveStorage.1.2.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92737K
-Composed in 363ms
+-- States: 16 Transitions: 105 Memory used: 124358K
+Composed in 556ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T1 minimising...
@@ -943,8 +943,8 @@ StopConflict2T2 = ArriveStorage.0.2.2 || ArriveStorage.1.2.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92757K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 124373K
+Composed in 567ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T2 minimising...
@@ -965,8 +965,8 @@ StopConflict2T3 = ArriveStorage.0.2.3 || ArriveStorage.1.2.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92764K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124395K
+Composed in 540ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T3 minimising...
@@ -987,8 +987,8 @@ StopConflict2T4 = ArriveStorage.0.2.4 || ArriveStorage.1.2.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92784K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 124409K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T4 minimising...
@@ -1009,8 +1009,8 @@ StopConflict2T5 = ArriveStorage.0.2.5 || ArriveStorage.1.2.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92810K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 124429K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T5 minimising...
@@ -1031,12 +1031,12 @@ StopConflict2T6 = ArriveStorage.0.2.6 || ArriveStorage.1.2.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92826K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 124441K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T6 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict2T6)
 DFA(StopConflict2T6) has 3 states.
 Tau reduction ON
@@ -1053,12 +1053,12 @@ StopConflict3T0 = ArriveStorage.0.3.0 || ArriveStorage.1.3.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92848K
-Composed in 338ms
+-- States: 16 Transitions: 105 Memory used: 124231K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T0 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict3T0)
 DFA(StopConflict3T0) has 3 states.
 Tau reduction ON
@@ -1075,8 +1075,8 @@ StopConflict3T1 = ArriveStorage.0.3.1 || ArriveStorage.1.3.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92868K
-Composed in 333ms
+-- States: 16 Transitions: 105 Memory used: 124470K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T1 minimising...
@@ -1097,8 +1097,8 @@ StopConflict3T2 = ArriveStorage.0.3.2 || ArriveStorage.1.3.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92933K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 124265K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T2 minimising...
@@ -1119,8 +1119,8 @@ StopConflict3T3 = ArriveStorage.0.3.3 || ArriveStorage.1.3.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92907K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 124505K
+Composed in 570ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T3 minimising...
@@ -1141,8 +1141,8 @@ StopConflict3T4 = ArriveStorage.0.3.4 || ArriveStorage.1.3.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92970K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 124529K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T4 minimising...
@@ -1163,8 +1163,8 @@ StopConflict3T5 = ArriveStorage.0.3.5 || ArriveStorage.1.3.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92949K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 124534K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T5 minimising...
@@ -1185,8 +1185,8 @@ StopConflict3T6 = ArriveStorage.0.3.6 || ArriveStorage.1.3.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93347K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 124557K
+Composed in 571ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T6 minimising...
@@ -1207,8 +1207,8 @@ StopConflict4T0 = ArriveStorage.0.4.0 || ArriveStorage.1.4.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 92989K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 124571K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T0 minimising...
@@ -1229,8 +1229,8 @@ StopConflict4T1 = ArriveStorage.0.4.1 || ArriveStorage.1.4.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93018K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 124589K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T1 minimising...
@@ -1251,12 +1251,12 @@ StopConflict4T2 = ArriveStorage.0.4.2 || ArriveStorage.1.4.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93086K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 124392K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T2 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict4T2)
 DFA(StopConflict4T2) has 3 states.
 Tau reduction ON
@@ -1273,8 +1273,8 @@ StopConflict4T3 = ArriveStorage.0.4.3 || ArriveStorage.1.4.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93053K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 124620K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T3 minimising...
@@ -1295,8 +1295,8 @@ StopConflict4T4 = ArriveStorage.0.4.4 || ArriveStorage.1.4.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93074K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 124633K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T4 minimising...
@@ -1317,12 +1317,12 @@ StopConflict4T5 = ArriveStorage.0.4.5 || ArriveStorage.1.4.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93133K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 124418K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T5 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict4T5)
 DFA(StopConflict4T5) has 3 states.
 Tau reduction ON
@@ -1339,8 +1339,8 @@ StopConflict4T6 = ArriveStorage.0.4.6 || ArriveStorage.1.4.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93115K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 124658K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T6 minimising...
@@ -1361,8 +1361,8 @@ StopConflict5T0 = ArriveStorage.0.5.0 || ArriveStorage.1.5.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93167K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 124680K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T0 minimising...
@@ -1383,12 +1383,12 @@ StopConflict5T1 = ArriveStorage.0.5.1 || ArriveStorage.1.5.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93120K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 124701K
+Composed in 541ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T1 minimising...
-Minimised States: 5 in 3ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict5T1)
 DFA(StopConflict5T1) has 3 states.
 Tau reduction ON
@@ -1405,8 +1405,8 @@ StopConflict5T2 = ArriveStorage.0.5.2 || ArriveStorage.1.5.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93170K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 124721K
+Composed in 527ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T2 minimising...
@@ -1427,12 +1427,12 @@ StopConflict5T3 = ArriveStorage.0.5.3 || ArriveStorage.1.5.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94182K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 124517K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T3 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict5T3)
 DFA(StopConflict5T3) has 3 states.
 Tau reduction ON
@@ -1449,8 +1449,8 @@ StopConflict5T4 = ArriveStorage.0.5.4 || ArriveStorage.1.5.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93213K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 124754K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T4 minimising...
@@ -1471,8 +1471,8 @@ StopConflict5T5 = ArriveStorage.0.5.5 || ArriveStorage.1.5.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93235K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124765K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T5 minimising...
@@ -1493,8 +1493,8 @@ StopConflict5T6 = ArriveStorage.0.5.6 || ArriveStorage.1.5.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93254K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 124562K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T6 minimising...
@@ -1515,8 +1515,8 @@ StopConflict6T0 = ArriveStorage.0.6.0 || ArriveStorage.1.6.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93223K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 124803K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T0 minimising...
@@ -1537,8 +1537,8 @@ StopConflict6T1 = ArriveStorage.0.6.1 || ArriveStorage.1.6.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93372K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 124815K
+Composed in 568ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T1 minimising...
@@ -1559,8 +1559,8 @@ StopConflict6T2 = ArriveStorage.0.6.2 || ArriveStorage.1.6.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93300K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 124647K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T2 minimising...
@@ -1569,7 +1569,7 @@ make DFA(StopConflict6T2)
 DFA(StopConflict6T2) has 3 states.
 Tau reduction ON
 StopConflict6T2 minimising...
-Minimised States: 3 in 1ms
+Minimised States: 3 in 0ms
 Formula !StopConflict6T3 = (true U (ArriveStorage.0.6.3 & ArriveStorage.1.6.3))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -1581,8 +1581,8 @@ StopConflict6T3 = ArriveStorage.0.6.3 || ArriveStorage.1.6.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93325K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 124888K
+Composed in 526ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T3 minimising...
@@ -1603,12 +1603,12 @@ StopConflict6T4 = ArriveStorage.0.6.4 || ArriveStorage.1.6.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93340K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 124619K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T4 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict6T4)
 DFA(StopConflict6T4) has 3 states.
 Tau reduction ON
@@ -1625,8 +1625,8 @@ StopConflict6T5 = ArriveStorage.0.6.5 || ArriveStorage.1.6.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93362K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 124852K
+Composed in 572ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T5 minimising...
@@ -1647,8 +1647,8 @@ StopConflict6T6 = ArriveStorage.0.6.6 || ArriveStorage.1.6.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93382K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 124862K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T6 minimising...
@@ -1669,8 +1669,8 @@ StopConflict0T7 = ArriveStorage.0.0.7 || ArriveStorage.1.0.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93404K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 124879K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T7 minimising...
@@ -1691,8 +1691,8 @@ StopConflict1T7 = ArriveStorage.0.1.7 || ArriveStorage.1.1.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93430K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 124892K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T7 minimising...
@@ -1713,8 +1713,8 @@ StopConflict2T7 = ArriveStorage.0.2.7 || ArriveStorage.1.2.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93447K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 124905K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T7 minimising...
@@ -1735,8 +1735,8 @@ StopConflict3T7 = ArriveStorage.0.3.7 || ArriveStorage.1.3.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93468K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 124920K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T7 minimising...
@@ -1757,8 +1757,8 @@ StopConflict4T7 = ArriveStorage.0.4.7 || ArriveStorage.1.4.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93491K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 124942K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T7 minimising...
@@ -1779,8 +1779,8 @@ StopConflict5T7 = ArriveStorage.0.5.7 || ArriveStorage.1.5.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93508K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 124958K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T7 minimising...
@@ -1801,8 +1801,8 @@ StopConflict6T7 = ArriveStorage.0.6.7 || ArriveStorage.1.6.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93529K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 124979K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T7 minimising...
@@ -1823,8 +1823,8 @@ StopConflict7T0 = ArriveStorage.0.7.0 || ArriveStorage.1.7.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93610K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 124993K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T0 minimising...
@@ -1845,8 +1845,8 @@ StopConflict7T1 = ArriveStorage.0.7.1 || ArriveStorage.1.7.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93586K
-Composed in 333ms
+-- States: 16 Transitions: 105 Memory used: 125009K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T1 minimising...
@@ -1855,7 +1855,7 @@ make DFA(StopConflict7T1)
 DFA(StopConflict7T1) has 3 states.
 Tau reduction ON
 StopConflict7T1 minimising...
-Minimised States: 3 in 1ms
+Minimised States: 3 in 0ms
 Formula !StopConflict7T2 = (true U (ArriveStorage.0.7.2 & ArriveStorage.1.7.2))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -1867,8 +1867,8 @@ StopConflict7T2 = ArriveStorage.0.7.2 || ArriveStorage.1.7.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93590K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 125031K
+Composed in 530ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T2 minimising...
@@ -1889,8 +1889,8 @@ StopConflict7T3 = ArriveStorage.0.7.3 || ArriveStorage.1.7.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93605K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 125046K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T3 minimising...
@@ -1911,8 +1911,8 @@ StopConflict7T4 = ArriveStorage.0.7.4 || ArriveStorage.1.7.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93621K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 125062K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T4 minimising...
@@ -1933,8 +1933,8 @@ StopConflict7T5 = ArriveStorage.0.7.5 || ArriveStorage.1.7.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93620K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 125085K
+Composed in 536ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T5 minimising...
@@ -1955,12 +1955,12 @@ StopConflict7T6 = ArriveStorage.0.7.6 || ArriveStorage.1.7.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93652K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 125326K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T6 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict7T6)
 DFA(StopConflict7T6) has 3 states.
 Tau reduction ON
@@ -1977,8 +1977,8 @@ StopConflict7T7 = ArriveStorage.0.7.7 || ArriveStorage.1.7.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93660K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 125111K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T7 minimising...
@@ -1999,12 +1999,12 @@ StopConflict0T8 = ArriveStorage.0.0.8 || ArriveStorage.1.0.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93675K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 125126K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T8 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict0T8)
 DFA(StopConflict0T8) has 3 states.
 Tau reduction ON
@@ -2021,8 +2021,8 @@ StopConflict1T8 = ArriveStorage.0.1.8 || ArriveStorage.1.1.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93712K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 126607K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T8 minimising...
@@ -2043,8 +2043,8 @@ StopConflict2T8 = ArriveStorage.0.2.8 || ArriveStorage.1.2.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93795K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 125150K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T8 minimising...
@@ -2065,12 +2065,12 @@ StopConflict3T8 = ArriveStorage.0.3.8 || ArriveStorage.1.3.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93726K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 124946K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T8 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict3T8)
 DFA(StopConflict3T8) has 3 states.
 Tau reduction ON
@@ -2087,8 +2087,8 @@ StopConflict4T8 = ArriveStorage.0.4.8 || ArriveStorage.1.4.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93751K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 125185K
+Composed in 556ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T8 minimising...
@@ -2109,8 +2109,8 @@ StopConflict5T8 = ArriveStorage.0.5.8 || ArriveStorage.1.5.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94447K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 125197K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T8 minimising...
@@ -2131,8 +2131,8 @@ StopConflict6T8 = ArriveStorage.0.6.8 || ArriveStorage.1.6.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93760K
-Composed in 360ms
+-- States: 16 Transitions: 105 Memory used: 125220K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T8 minimising...
@@ -2153,8 +2153,8 @@ StopConflict7T8 = ArriveStorage.0.7.8 || ArriveStorage.1.7.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93852K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 125237K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T8 minimising...
@@ -2175,8 +2175,8 @@ StopConflict8T0 = ArriveStorage.0.8.0 || ArriveStorage.1.8.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93801K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 125257K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T0 minimising...
@@ -2197,12 +2197,12 @@ StopConflict8T1 = ArriveStorage.0.8.1 || ArriveStorage.1.8.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93822K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125279K
+Composed in 537ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T1 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict8T1)
 DFA(StopConflict8T1) has 3 states.
 Tau reduction ON
@@ -2219,8 +2219,8 @@ StopConflict8T2 = ArriveStorage.0.8.2 || ArriveStorage.1.8.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93843K
-Composed in 335ms
+-- States: 16 Transitions: 105 Memory used: 125285K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T2 minimising...
@@ -2229,7 +2229,7 @@ make DFA(StopConflict8T2)
 DFA(StopConflict8T2) has 3 states.
 Tau reduction ON
 StopConflict8T2 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Formula !StopConflict8T3 = (true U (ArriveStorage.0.8.3 & ArriveStorage.1.8.3))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -2241,8 +2241,8 @@ StopConflict8T3 = ArriveStorage.0.8.3 || ArriveStorage.1.8.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93912K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 127448K
+Composed in 541ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T3 minimising...
@@ -2263,8 +2263,8 @@ StopConflict8T4 = ArriveStorage.0.8.4 || ArriveStorage.1.8.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93889K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 126093K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T4 minimising...
@@ -2285,8 +2285,8 @@ StopConflict8T5 = ArriveStorage.0.8.5 || ArriveStorage.1.8.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93931K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125356K
+Composed in 571ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T5 minimising...
@@ -2307,8 +2307,8 @@ StopConflict8T6 = ArriveStorage.0.8.6 || ArriveStorage.1.8.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94006K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 125187K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T6 minimising...
@@ -2329,12 +2329,12 @@ StopConflict8T7 = ArriveStorage.0.8.7 || ArriveStorage.1.8.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93946K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 125323K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T7 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict8T7)
 DFA(StopConflict8T7) has 3 states.
 Tau reduction ON
@@ -2351,8 +2351,8 @@ StopConflict8T8 = ArriveStorage.0.8.8 || ArriveStorage.1.8.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93971K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125346K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T8 minimising...
@@ -2373,12 +2373,12 @@ StopConflict0T9 = ArriveStorage.0.0.9 || ArriveStorage.1.0.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 93986K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 125361K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T9 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict0T9)
 DFA(StopConflict0T9) has 3 states.
 Tau reduction ON
@@ -2395,8 +2395,8 @@ StopConflict1T9 = ArriveStorage.0.1.9 || ArriveStorage.1.1.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94011K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 125395K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T9 minimising...
@@ -2417,8 +2417,8 @@ StopConflict2T9 = ArriveStorage.0.2.9 || ArriveStorage.1.2.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94025K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 125173K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T9 minimising...
@@ -2439,8 +2439,8 @@ StopConflict3T9 = ArriveStorage.0.3.9 || ArriveStorage.1.3.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94048K
-Composed in 364ms
+-- States: 16 Transitions: 105 Memory used: 125415K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T9 minimising...
@@ -2461,8 +2461,8 @@ StopConflict4T9 = ArriveStorage.0.4.9 || ArriveStorage.1.4.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94069K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 125437K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T9 minimising...
@@ -2483,8 +2483,8 @@ StopConflict5T9 = ArriveStorage.0.5.9 || ArriveStorage.1.5.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94096K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 125450K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T9 minimising...
@@ -2493,7 +2493,7 @@ make DFA(StopConflict5T9)
 DFA(StopConflict5T9) has 3 states.
 Tau reduction ON
 StopConflict5T9 minimising...
-Minimised States: 3 in 1ms
+Minimised States: 3 in 0ms
 Formula !StopConflict6T9 = (true U (ArriveStorage.0.6.9 & ArriveStorage.1.6.9))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -2505,8 +2505,8 @@ StopConflict6T9 = ArriveStorage.0.6.9 || ArriveStorage.1.6.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94119K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125473K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T9 minimising...
@@ -2527,8 +2527,8 @@ StopConflict7T9 = ArriveStorage.0.7.9 || ArriveStorage.1.7.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94188K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 127423K
+Composed in 534ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T9 minimising...
@@ -2549,12 +2549,12 @@ StopConflict8T9 = ArriveStorage.0.8.9 || ArriveStorage.1.8.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94122K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 125496K
+Composed in 541ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T9 minimising...
-Minimised States: 5 in 4ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict8T9)
 DFA(StopConflict8T9) has 3 states.
 Tau reduction ON
@@ -2571,8 +2571,8 @@ StopConflict9T0 = ArriveStorage.0.9.0 || ArriveStorage.1.9.0 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94180K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125518K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T0 minimising...
@@ -2593,12 +2593,12 @@ StopConflict9T1 = ArriveStorage.0.9.1 || ArriveStorage.1.9.1 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94256K
-Composed in 364ms
+-- States: 16 Transitions: 105 Memory used: 125761K
+Composed in 541ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T1 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict9T1)
 DFA(StopConflict9T1) has 3 states.
 Tau reduction ON
@@ -2615,8 +2615,8 @@ StopConflict9T2 = ArriveStorage.0.9.2 || ArriveStorage.1.9.2 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94214K
-Composed in 363ms
+-- States: 16 Transitions: 105 Memory used: 125547K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T2 minimising...
@@ -2637,8 +2637,8 @@ StopConflict9T3 = ArriveStorage.0.9.3 || ArriveStorage.1.9.3 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94320K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 125563K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T3 minimising...
@@ -2659,8 +2659,8 @@ StopConflict9T4 = ArriveStorage.0.9.4 || ArriveStorage.1.9.4 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94264K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 125354K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T4 minimising...
@@ -2681,8 +2681,8 @@ StopConflict9T5 = ArriveStorage.0.9.5 || ArriveStorage.1.9.5 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94278K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 125597K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T5 minimising...
@@ -2703,8 +2703,8 @@ StopConflict9T6 = ArriveStorage.0.9.6 || ArriveStorage.1.9.6 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94306K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 125613K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T6 minimising...
@@ -2725,8 +2725,8 @@ StopConflict9T7 = ArriveStorage.0.9.7 || ArriveStorage.1.9.7 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94449K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125403K
+Composed in 532ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T7 minimising...
@@ -2747,8 +2747,8 @@ StopConflict9T8 = ArriveStorage.0.9.8 || ArriveStorage.1.9.8 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94370K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125643K
+Composed in 557ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T8 minimising...
@@ -2769,8 +2769,8 @@ StopConflict9T9 = ArriveStorage.0.9.9 || ArriveStorage.1.9.9 || SYNC || StopConf
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94457K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 125666K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T9 minimising...
@@ -2791,8 +2791,8 @@ StopConflict0T10 = ArriveStorage.0.0.10 || ArriveStorage.1.0.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94390K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125705K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T10 minimising...
@@ -2813,8 +2813,8 @@ StopConflict1T10 = ArriveStorage.0.1.10 || ArriveStorage.1.1.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94470K
-Composed in 338ms
+-- States: 16 Transitions: 105 Memory used: 125693K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T10 minimising...
@@ -2823,7 +2823,7 @@ make DFA(StopConflict1T10)
 DFA(StopConflict1T10) has 3 states.
 Tau reduction ON
 StopConflict1T10 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Formula !StopConflict2T10 = (true U (ArriveStorage.0.2.10 & ArriveStorage.1.2.10))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -2835,8 +2835,8 @@ StopConflict2T10 = ArriveStorage.0.2.10 || ArriveStorage.1.2.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94392K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 125716K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T10 minimising...
@@ -2857,12 +2857,12 @@ StopConflict3T10 = ArriveStorage.0.3.10 || ArriveStorage.1.3.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94456K
-Composed in 335ms
+-- States: 16 Transitions: 105 Memory used: 125965K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T10 minimising...
-Minimised States: 5 in 8ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict3T10)
 DFA(StopConflict3T10) has 3 states.
 Tau reduction ON
@@ -2879,8 +2879,8 @@ StopConflict4T10 = ArriveStorage.0.4.10 || ArriveStorage.1.4.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94555K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 125746K
+Composed in 574ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T10 minimising...
@@ -2901,8 +2901,8 @@ StopConflict5T10 = ArriveStorage.0.5.10 || ArriveStorage.1.5.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94467K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 125759K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T10 minimising...
@@ -2923,12 +2923,12 @@ StopConflict6T10 = ArriveStorage.0.6.10 || ArriveStorage.1.6.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94487K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125775K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T10 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict6T10)
 DFA(StopConflict6T10) has 3 states.
 Tau reduction ON
@@ -2945,8 +2945,8 @@ StopConflict7T10 = ArriveStorage.0.7.10 || ArriveStorage.1.7.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94501K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 125786K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T10 minimising...
@@ -2967,12 +2967,12 @@ StopConflict8T10 = ArriveStorage.0.8.10 || ArriveStorage.1.8.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94530K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125810K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T10 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 9ms
 make DFA(StopConflict8T10)
 DFA(StopConflict8T10) has 3 states.
 Tau reduction ON
@@ -2989,8 +2989,8 @@ StopConflict9T10 = ArriveStorage.0.9.10 || ArriveStorage.1.9.10 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94507K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 126574K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T10 minimising...
@@ -3011,8 +3011,8 @@ StopConflict10T0 = ArriveStorage.0.10.0 || ArriveStorage.1.10.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94596K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 125823K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T0 minimising...
@@ -3033,8 +3033,8 @@ StopConflict10T1 = ArriveStorage.0.10.1 || ArriveStorage.1.10.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94579K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 126106K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T1 minimising...
@@ -3055,8 +3055,8 @@ StopConflict10T2 = ArriveStorage.0.10.2 || ArriveStorage.1.10.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94605K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 125859K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T2 minimising...
@@ -3077,8 +3077,8 @@ StopConflict10T3 = ArriveStorage.0.10.3 || ArriveStorage.1.10.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94618K
-Composed in 360ms
+-- States: 16 Transitions: 105 Memory used: 125846K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T3 minimising...
@@ -3099,8 +3099,8 @@ StopConflict10T4 = ArriveStorage.0.10.4 || ArriveStorage.1.10.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94641K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 125870K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T4 minimising...
@@ -3121,12 +3121,12 @@ StopConflict10T5 = ArriveStorage.0.10.5 || ArriveStorage.1.10.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94665K
-Composed in 336ms
+-- States: 16 Transitions: 105 Memory used: 125912K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T5 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict10T5)
 DFA(StopConflict10T5) has 3 states.
 Tau reduction ON
@@ -3143,8 +3143,8 @@ StopConflict10T6 = ArriveStorage.0.10.6 || ArriveStorage.1.10.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94684K
-Composed in 338ms
+-- States: 16 Transitions: 105 Memory used: 125680K
+Composed in 573ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T6 minimising...
@@ -3165,8 +3165,8 @@ StopConflict10T7 = ArriveStorage.0.10.7 || ArriveStorage.1.10.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94704K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125699K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T7 minimising...
@@ -3187,12 +3187,12 @@ StopConflict10T8 = ArriveStorage.0.10.8 || ArriveStorage.1.10.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94715K
-Composed in 378ms
+-- States: 16 Transitions: 105 Memory used: 125711K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T8 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict10T8)
 DFA(StopConflict10T8) has 3 states.
 Tau reduction ON
@@ -3209,8 +3209,8 @@ StopConflict10T9 = ArriveStorage.0.10.9 || ArriveStorage.1.10.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94735K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 125954K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T9 minimising...
@@ -3231,12 +3231,12 @@ StopConflict10T10 = ArriveStorage.0.10.10 || ArriveStorage.1.10.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94757K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 125749K
+Composed in 569ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T10 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict10T10)
 DFA(StopConflict10T10) has 3 states.
 Tau reduction ON
@@ -3253,8 +3253,8 @@ StopConflict0T11 = ArriveStorage.0.0.11 || ArriveStorage.1.0.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94777K
-Composed in 335ms
+-- States: 16 Transitions: 105 Memory used: 125986K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T11 minimising...
@@ -3275,12 +3275,12 @@ StopConflict1T11 = ArriveStorage.0.1.11 || ArriveStorage.1.1.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94798K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 126130K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T11 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict1T11)
 DFA(StopConflict1T11) has 3 states.
 Tau reduction ON
@@ -3297,8 +3297,8 @@ StopConflict2T11 = ArriveStorage.0.2.11 || ArriveStorage.1.2.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94820K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 126012K
+Composed in 537ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T11 minimising...
@@ -3319,8 +3319,8 @@ StopConflict3T11 = ArriveStorage.0.3.11 || ArriveStorage.1.3.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94841K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 126035K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T11 minimising...
@@ -3341,8 +3341,8 @@ StopConflict4T11 = ArriveStorage.0.4.11 || ArriveStorage.1.4.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94862K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 126051K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T11 minimising...
@@ -3363,8 +3363,8 @@ StopConflict5T11 = ArriveStorage.0.5.11 || ArriveStorage.1.5.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94883K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 126067K
+Composed in 565ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T11 minimising...
@@ -3385,12 +3385,12 @@ StopConflict6T11 = ArriveStorage.0.6.11 || ArriveStorage.1.6.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94912K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 126314K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T11 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict6T11)
 DFA(StopConflict6T11) has 3 states.
 Tau reduction ON
@@ -3407,12 +3407,12 @@ StopConflict7T11 = ArriveStorage.0.7.11 || ArriveStorage.1.7.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94891K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 125870K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T11 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 6ms
 make DFA(StopConflict7T11)
 DFA(StopConflict7T11) has 3 states.
 Tau reduction ON
@@ -3429,8 +3429,8 @@ StopConflict8T11 = ArriveStorage.0.8.11 || ArriveStorage.1.8.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94956K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 125875K
+Composed in 566ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T11 minimising...
@@ -3451,8 +3451,8 @@ StopConflict9T11 = ArriveStorage.0.9.11 || ArriveStorage.1.9.11 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 94966K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 126114K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T11 minimising...
@@ -3473,8 +3473,8 @@ StopConflict10T11 = ArriveStorage.0.10.11 || ArriveStorage.1.10.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95068K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 126137K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T11 minimising...
@@ -3495,12 +3495,12 @@ StopConflict11T0 = ArriveStorage.0.11.0 || ArriveStorage.1.11.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95055K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 126154K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T0 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict11T0)
 DFA(StopConflict11T0) has 3 states.
 Tau reduction ON
@@ -3517,8 +3517,8 @@ StopConflict11T1 = ArriveStorage.0.11.1 || ArriveStorage.1.11.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95041K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 126175K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T1 minimising...
@@ -3539,8 +3539,8 @@ StopConflict11T2 = ArriveStorage.0.11.2 || ArriveStorage.1.11.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95059K
-Composed in 366ms
+-- States: 16 Transitions: 105 Memory used: 126204K
+Composed in 565ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T2 minimising...
@@ -3561,8 +3561,8 @@ StopConflict11T3 = ArriveStorage.0.11.3 || ArriveStorage.1.11.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95083K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 126207K
+Composed in 557ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T3 minimising...
@@ -3583,8 +3583,8 @@ StopConflict11T4 = ArriveStorage.0.11.4 || ArriveStorage.1.11.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95102K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 126230K
+Composed in 527ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T4 minimising...
@@ -3605,8 +3605,8 @@ StopConflict11T5 = ArriveStorage.0.11.5 || ArriveStorage.1.11.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95125K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 126043K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T5 minimising...
@@ -3627,8 +3627,8 @@ StopConflict11T6 = ArriveStorage.0.11.6 || ArriveStorage.1.11.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96271K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 126266K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T6 minimising...
@@ -3649,12 +3649,12 @@ StopConflict11T7 = ArriveStorage.0.11.7 || ArriveStorage.1.11.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95166K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 126278K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T7 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict11T7)
 DFA(StopConflict11T7) has 3 states.
 Tau reduction ON
@@ -3671,8 +3671,8 @@ StopConflict11T8 = ArriveStorage.0.11.8 || ArriveStorage.1.11.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95186K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 126301K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T8 minimising...
@@ -3693,8 +3693,8 @@ StopConflict11T9 = ArriveStorage.0.11.9 || ArriveStorage.1.11.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95208K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 126098K
+Composed in 567ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T9 minimising...
@@ -3715,8 +3715,8 @@ StopConflict11T10 = ArriveStorage.0.11.10 || ArriveStorage.1.11.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97046K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 126319K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T10 minimising...
@@ -3725,7 +3725,7 @@ make DFA(StopConflict11T10)
 DFA(StopConflict11T10) has 3 states.
 Tau reduction ON
 StopConflict11T10 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Formula !StopConflict11T11 = (true U (ArriveStorage.0.11.11 & ArriveStorage.1.11.11))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -3737,8 +3737,8 @@ StopConflict11T11 = ArriveStorage.0.11.11 || ArriveStorage.1.11.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95255K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 126332K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T11 minimising...
@@ -3759,8 +3759,8 @@ StopConflict0T12 = ArriveStorage.0.0.12 || ArriveStorage.1.0.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95224K
-Composed in 360ms
+-- States: 16 Transitions: 105 Memory used: 126349K
+Composed in 557ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T12 minimising...
@@ -3781,8 +3781,8 @@ StopConflict1T12 = ArriveStorage.0.1.12 || ArriveStorage.1.1.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95279K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 126372K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T12 minimising...
@@ -3803,8 +3803,8 @@ StopConflict2T12 = ArriveStorage.0.2.12 || ArriveStorage.1.2.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95265K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 126389K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T12 minimising...
@@ -3825,8 +3825,8 @@ StopConflict3T12 = ArriveStorage.0.3.12 || ArriveStorage.1.3.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95331K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 126420K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T12 minimising...
@@ -3847,8 +3847,8 @@ StopConflict4T12 = ArriveStorage.0.4.12 || ArriveStorage.1.4.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96313K
-Composed in 377ms
+-- States: 16 Transitions: 105 Memory used: 126429K
+Composed in 539ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T12 minimising...
@@ -3869,8 +3869,8 @@ StopConflict5T12 = ArriveStorage.0.5.12 || ArriveStorage.1.5.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95372K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 126466K
+Composed in 574ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T12 minimising...
@@ -3891,8 +3891,8 @@ StopConflict6T12 = ArriveStorage.0.6.12 || ArriveStorage.1.6.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95386K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 126261K
+Composed in 566ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T12 minimising...
@@ -3913,8 +3913,8 @@ StopConflict7T12 = ArriveStorage.0.7.12 || ArriveStorage.1.7.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95416K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 126504K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T12 minimising...
@@ -3935,8 +3935,8 @@ StopConflict8T12 = ArriveStorage.0.8.12 || ArriveStorage.1.8.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95392K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 126460K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T12 minimising...
@@ -3957,8 +3957,8 @@ StopConflict9T12 = ArriveStorage.0.9.12 || ArriveStorage.1.9.12 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95457K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 126267K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T12 minimising...
@@ -3979,8 +3979,8 @@ StopConflict10T12 = ArriveStorage.0.10.12 || ArriveStorage.1.10.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95518K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 126539K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T12 minimising...
@@ -4001,12 +4001,12 @@ StopConflict11T12 = ArriveStorage.0.11.12 || ArriveStorage.1.11.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95491K
-Composed in 334ms
+-- States: 16 Transitions: 105 Memory used: 126291K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T12 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict11T12)
 DFA(StopConflict11T12) has 3 states.
 Tau reduction ON
@@ -4023,8 +4023,8 @@ StopConflict12T0 = ArriveStorage.0.12.0 || ArriveStorage.1.12.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95522K
-Composed in 361ms
+-- States: 16 Transitions: 105 Memory used: 126509K
+Composed in 572ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T0 minimising...
@@ -4045,8 +4045,8 @@ StopConflict12T1 = ArriveStorage.0.12.1 || ArriveStorage.1.12.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95543K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 127345K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T1 minimising...
@@ -4067,12 +4067,12 @@ StopConflict12T2 = ArriveStorage.0.12.2 || ArriveStorage.1.12.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95689K
-Composed in 364ms
+-- States: 16 Transitions: 105 Memory used: 126546K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T2 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict12T2)
 DFA(StopConflict12T2) has 3 states.
 Tau reduction ON
@@ -4089,12 +4089,12 @@ StopConflict12T3 = ArriveStorage.0.12.3 || ArriveStorage.1.12.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95575K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 126329K
+Composed in 586ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T3 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict12T3)
 DFA(StopConflict12T3) has 3 states.
 Tau reduction ON
@@ -4111,8 +4111,8 @@ StopConflict12T4 = ArriveStorage.0.12.4 || ArriveStorage.1.12.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95616K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 126572K
+Composed in 575ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T4 minimising...
@@ -4133,12 +4133,12 @@ StopConflict12T5 = ArriveStorage.0.12.5 || ArriveStorage.1.12.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95601K
-Composed in 362ms
+-- States: 16 Transitions: 105 Memory used: 126591K
+Composed in 535ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T5 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict12T5)
 DFA(StopConflict12T5) has 3 states.
 Tau reduction ON
@@ -4155,8 +4155,8 @@ StopConflict12T6 = ArriveStorage.0.12.6 || ArriveStorage.1.12.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95611K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 126622K
+Composed in 573ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T6 minimising...
@@ -4177,8 +4177,8 @@ StopConflict12T7 = ArriveStorage.0.12.7 || ArriveStorage.1.12.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95633K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 126629K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T7 minimising...
@@ -4199,8 +4199,8 @@ StopConflict12T8 = ArriveStorage.0.12.8 || ArriveStorage.1.12.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96532K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 126645K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T8 minimising...
@@ -4221,8 +4221,8 @@ StopConflict12T9 = ArriveStorage.0.12.9 || ArriveStorage.1.12.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95672K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 126440K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T9 minimising...
@@ -4243,8 +4243,8 @@ StopConflict12T10 = ArriveStorage.0.12.10 || ArriveStorage.1.12.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95650K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 126685K
+Composed in 528ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T10 minimising...
@@ -4265,8 +4265,8 @@ StopConflict12T11 = ArriveStorage.0.12.11 || ArriveStorage.1.12.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95756K
-Composed in 332ms
+-- States: 16 Transitions: 105 Memory used: 126694K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T11 minimising...
@@ -4287,8 +4287,8 @@ StopConflict12T12 = ArriveStorage.0.12.12 || ArriveStorage.1.12.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95693K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 126490K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T12 minimising...
@@ -4309,12 +4309,12 @@ StopConflict0T13 = ArriveStorage.0.0.13 || ArriveStorage.1.0.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95803K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 126733K
+Composed in 581ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T13 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict0T13)
 DFA(StopConflict0T13) has 3 states.
 Tau reduction ON
@@ -4331,12 +4331,12 @@ StopConflict1T13 = ArriveStorage.0.1.13 || ArriveStorage.1.1.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95781K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 126751K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T13 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict1T13)
 DFA(StopConflict1T13) has 3 states.
 Tau reduction ON
@@ -4353,8 +4353,8 @@ StopConflict2T13 = ArriveStorage.0.2.13 || ArriveStorage.1.2.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95754K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 126796K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T13 minimising...
@@ -4375,12 +4375,12 @@ StopConflict3T13 = ArriveStorage.0.3.13 || ArriveStorage.1.3.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95876K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 126558K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T13 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict3T13)
 DFA(StopConflict3T13) has 3 states.
 Tau reduction ON
@@ -4397,8 +4397,8 @@ StopConflict4T13 = ArriveStorage.0.4.13 || ArriveStorage.1.4.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96385K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 126802K
+Composed in 569ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T13 minimising...
@@ -4419,8 +4419,8 @@ StopConflict5T13 = ArriveStorage.0.5.13 || ArriveStorage.1.5.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95818K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 126854K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T13 minimising...
@@ -4441,8 +4441,8 @@ StopConflict6T13 = ArriveStorage.0.6.13 || ArriveStorage.1.6.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95885K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 126832K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T13 minimising...
@@ -4463,8 +4463,8 @@ StopConflict7T13 = ArriveStorage.0.7.13 || ArriveStorage.1.7.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95895K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 126862K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T13 minimising...
@@ -4485,8 +4485,8 @@ StopConflict8T13 = ArriveStorage.0.8.13 || ArriveStorage.1.8.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95914K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 126866K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T13 minimising...
@@ -4507,8 +4507,8 @@ StopConflict9T13 = ArriveStorage.0.9.13 || ArriveStorage.1.9.13 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95901K
-Composed in 359ms
+-- States: 16 Transitions: 105 Memory used: 126888K
+Composed in 532ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T13 minimising...
@@ -4517,7 +4517,7 @@ make DFA(StopConflict9T13)
 DFA(StopConflict9T13) has 3 states.
 Tau reduction ON
 StopConflict9T13 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Formula !StopConflict10T13 = (true U (ArriveStorage.0.10.13 & ArriveStorage.1.10.13))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -4529,8 +4529,8 @@ StopConflict10T13 = ArriveStorage.0.10.13 || ArriveStorage.1.10.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95922K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 126941K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T13 minimising...
@@ -4551,12 +4551,12 @@ StopConflict11T13 = ArriveStorage.0.11.13 || ArriveStorage.1.11.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 95979K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 126699K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T13 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict11T13)
 DFA(StopConflict11T13) has 3 states.
 Tau reduction ON
@@ -4573,8 +4573,8 @@ StopConflict12T13 = ArriveStorage.0.12.13 || ArriveStorage.1.12.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96043K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 126930K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T13 minimising...
@@ -4595,8 +4595,8 @@ StopConflict13T0 = ArriveStorage.0.13.0 || ArriveStorage.1.13.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96031K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127219K
+Composed in 556ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T0 minimising...
@@ -4617,8 +4617,8 @@ StopConflict13T1 = ArriveStorage.0.13.1 || ArriveStorage.1.13.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96086K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 126957K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T1 minimising...
@@ -4639,8 +4639,8 @@ StopConflict13T2 = ArriveStorage.0.13.2 || ArriveStorage.1.13.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96508K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 126992K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T2 minimising...
@@ -4661,12 +4661,12 @@ StopConflict13T3 = ArriveStorage.0.13.3 || ArriveStorage.1.13.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96084K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 126998K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T3 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict13T3)
 DFA(StopConflict13T3) has 3 states.
 Tau reduction ON
@@ -4683,8 +4683,8 @@ StopConflict13T4 = ArriveStorage.0.13.4 || ArriveStorage.1.13.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96104K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 127016K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T4 minimising...
@@ -4705,8 +4705,8 @@ StopConflict13T5 = ArriveStorage.0.13.5 || ArriveStorage.1.13.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97084K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 127065K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T5 minimising...
@@ -4727,8 +4727,8 @@ StopConflict13T6 = ArriveStorage.0.13.6 || ArriveStorage.1.13.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96155K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 127073K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T6 minimising...
@@ -4749,12 +4749,12 @@ StopConflict13T7 = ArriveStorage.0.13.7 || ArriveStorage.1.13.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96166K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 126808K
+Composed in 535ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T7 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict13T7)
 DFA(StopConflict13T7) has 3 states.
 Tau reduction ON
@@ -4771,8 +4771,8 @@ StopConflict13T8 = ArriveStorage.0.13.8 || ArriveStorage.1.13.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96151K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 127051K
+Composed in 572ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T8 minimising...
@@ -4793,12 +4793,12 @@ StopConflict13T9 = ArriveStorage.0.13.9 || ArriveStorage.1.13.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96171K
-Composed in 360ms
+-- States: 16 Transitions: 105 Memory used: 126868K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T9 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 5ms
 make DFA(StopConflict13T9)
 DFA(StopConflict13T9) has 3 states.
 Tau reduction ON
@@ -4815,8 +4815,8 @@ StopConflict13T10 = ArriveStorage.0.13.10 || ArriveStorage.1.13.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96239K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 127060K
+Composed in 573ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T10 minimising...
@@ -4837,8 +4837,8 @@ StopConflict13T11 = ArriveStorage.0.13.11 || ArriveStorage.1.13.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96249K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 127076K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T11 minimising...
@@ -4859,8 +4859,8 @@ StopConflict13T12 = ArriveStorage.0.13.12 || ArriveStorage.1.13.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96284K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 127102K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T12 minimising...
@@ -4881,12 +4881,12 @@ StopConflict13T13 = ArriveStorage.0.13.13 || ArriveStorage.1.13.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96272K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 126921K
+Composed in 552ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T13 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict13T13)
 DFA(StopConflict13T13) has 3 states.
 Tau reduction ON
@@ -4903,8 +4903,8 @@ StopConflict0T14 = ArriveStorage.0.0.14 || ArriveStorage.1.0.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96310K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 127136K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T14 minimising...
@@ -4925,8 +4925,8 @@ StopConflict1T14 = ArriveStorage.0.1.14 || ArriveStorage.1.1.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96322K
-Composed in 359ms
+-- States: 16 Transitions: 105 Memory used: 127153K
+Composed in 540ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T14 minimising...
@@ -4947,8 +4947,8 @@ StopConflict2T14 = ArriveStorage.0.2.14 || ArriveStorage.1.2.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96342K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 127164K
+Composed in 534ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T14 minimising...
@@ -4969,8 +4969,8 @@ StopConflict3T14 = ArriveStorage.0.3.14 || ArriveStorage.1.3.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96374K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 127188K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T14 minimising...
@@ -4991,12 +4991,12 @@ StopConflict4T14 = ArriveStorage.0.4.14 || ArriveStorage.1.4.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96395K
-Composed in 360ms
+-- States: 16 Transitions: 105 Memory used: 126990K
+Composed in 565ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T14 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 4ms
 make DFA(StopConflict4T14)
 DFA(StopConflict4T14) has 3 states.
 Tau reduction ON
@@ -5013,8 +5013,8 @@ StopConflict5T14 = ArriveStorage.0.5.14 || ArriveStorage.1.5.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96360K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127215K
+Composed in 562ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T14 minimising...
@@ -5035,12 +5035,12 @@ StopConflict6T14 = ArriveStorage.0.6.14 || ArriveStorage.1.6.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96479K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 127352K
+Composed in 531ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T14 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict6T14)
 DFA(StopConflict6T14) has 3 states.
 Tau reduction ON
@@ -5057,8 +5057,8 @@ StopConflict7T14 = ArriveStorage.0.7.14 || ArriveStorage.1.7.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97539K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 127029K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T14 minimising...
@@ -5079,12 +5079,12 @@ StopConflict8T14 = ArriveStorage.0.8.14 || ArriveStorage.1.8.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96461K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 127270K
+Composed in 526ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T14 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict8T14)
 DFA(StopConflict8T14) has 3 states.
 Tau reduction ON
@@ -5101,8 +5101,8 @@ StopConflict9T14 = ArriveStorage.0.9.14 || ArriveStorage.1.9.14 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96470K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 127069K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T14 minimising...
@@ -5123,8 +5123,8 @@ StopConflict10T14 = ArriveStorage.0.10.14 || ArriveStorage.1.10.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96503K
-Composed in 336ms
+-- States: 16 Transitions: 105 Memory used: 127309K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T14 minimising...
@@ -5145,12 +5145,12 @@ StopConflict11T14 = ArriveStorage.0.11.14 || ArriveStorage.1.11.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96557K
-Composed in 361ms
+-- States: 16 Transitions: 105 Memory used: 127300K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T14 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 6ms
 make DFA(StopConflict11T14)
 DFA(StopConflict11T14) has 3 states.
 Tau reduction ON
@@ -5167,12 +5167,12 @@ StopConflict12T14 = ArriveStorage.0.12.14 || ArriveStorage.1.12.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96517K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 127096K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T14 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 5ms
 make DFA(StopConflict12T14)
 DFA(StopConflict12T14) has 3 states.
 Tau reduction ON
@@ -5189,17 +5189,17 @@ StopConflict13T14 = ArriveStorage.0.13.14 || ArriveStorage.1.13.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96494K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 127110K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T14 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 3ms
 make DFA(StopConflict13T14)
 DFA(StopConflict13T14) has 3 states.
 Tau reduction ON
 StopConflict13T14 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 2ms
 Formula !StopConflict14T0 = (true U (ArriveStorage.0.14.0 & ArriveStorage.1.14.0))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -5211,12 +5211,12 @@ StopConflict14T0 = ArriveStorage.0.14.0 || ArriveStorage.1.14.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96560K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 127131K
+Composed in 566ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T0 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 4ms
 make DFA(StopConflict14T0)
 DFA(StopConflict14T0) has 3 states.
 Tau reduction ON
@@ -5233,8 +5233,8 @@ StopConflict14T1 = ArriveStorage.0.14.1 || ArriveStorage.1.14.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96570K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127151K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T1 minimising...
@@ -5255,8 +5255,8 @@ StopConflict14T2 = ArriveStorage.0.14.2 || ArriveStorage.1.14.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96724K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 127390K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T2 minimising...
@@ -5277,8 +5277,8 @@ StopConflict14T3 = ArriveStorage.0.14.3 || ArriveStorage.1.14.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96625K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 127470K
+Composed in 566ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T3 minimising...
@@ -5299,8 +5299,8 @@ StopConflict14T4 = ArriveStorage.0.14.4 || ArriveStorage.1.14.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96600K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 127422K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T4 minimising...
@@ -5321,8 +5321,8 @@ StopConflict14T5 = ArriveStorage.0.14.5 || ArriveStorage.1.14.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96680K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 127444K
+Composed in 569ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T5 minimising...
@@ -5343,8 +5343,8 @@ StopConflict14T6 = ArriveStorage.0.14.6 || ArriveStorage.1.14.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96850K
-Composed in 363ms
+-- States: 16 Transitions: 105 Memory used: 127462K
+Composed in 575ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T6 minimising...
@@ -5365,8 +5365,8 @@ StopConflict14T7 = ArriveStorage.0.14.7 || ArriveStorage.1.14.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96664K
-Composed in 351ms
+-- States: 16 Transitions: 105 Memory used: 127282K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T7 minimising...
@@ -5387,12 +5387,12 @@ StopConflict14T8 = ArriveStorage.0.14.8 || ArriveStorage.1.14.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96842K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 134612K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T8 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict14T8)
 DFA(StopConflict14T8) has 3 states.
 Tau reduction ON
@@ -5409,8 +5409,8 @@ StopConflict14T9 = ArriveStorage.0.14.9 || ArriveStorage.1.14.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96865K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 127477K
+Composed in 557ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T9 minimising...
@@ -5431,8 +5431,8 @@ StopConflict14T10 = ArriveStorage.0.14.10 || ArriveStorage.1.14.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96787K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 127487K
+Composed in 565ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T10 minimising...
@@ -5453,12 +5453,12 @@ StopConflict14T11 = ArriveStorage.0.14.11 || ArriveStorage.1.14.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97121K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 127285K
+Composed in 563ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T11 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict14T11)
 DFA(StopConflict14T11) has 3 states.
 Tau reduction ON
@@ -5475,8 +5475,8 @@ StopConflict14T12 = ArriveStorage.0.14.12 || ArriveStorage.1.14.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96763K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 127527K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T12 minimising...
@@ -5497,8 +5497,8 @@ StopConflict14T13 = ArriveStorage.0.14.13 || ArriveStorage.1.14.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96896K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 127632K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T13 minimising...
@@ -5519,8 +5519,8 @@ StopConflict14T14 = ArriveStorage.0.14.14 || ArriveStorage.1.14.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96843K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 127340K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T14 minimising...
@@ -5529,7 +5529,7 @@ make DFA(StopConflict14T14)
 DFA(StopConflict14T14) has 3 states.
 Tau reduction ON
 StopConflict14T14 minimising...
-Minimised States: 3 in 1ms
+Minimised States: 3 in 0ms
 Formula !StopConflict0T15 = (true U (ArriveStorage.0.0.15 & ArriveStorage.1.0.15))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -5541,8 +5541,8 @@ StopConflict0T15 = ArriveStorage.0.0.15 || ArriveStorage.1.0.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96866K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 127583K
+Composed in 536ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T15 minimising...
@@ -5563,12 +5563,12 @@ StopConflict1T15 = ArriveStorage.0.1.15 || ArriveStorage.1.1.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96851K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 127605K
+Composed in 557ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T15 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict1T15)
 DFA(StopConflict1T15) has 3 states.
 Tau reduction ON
@@ -5585,12 +5585,12 @@ StopConflict2T15 = ArriveStorage.0.2.15 || ArriveStorage.1.2.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 101787K
-Composed in 370ms
+-- States: 16 Transitions: 105 Memory used: 127388K
+Composed in 570ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T15 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict2T15)
 DFA(StopConflict2T15) has 3 states.
 Tau reduction ON
@@ -5607,8 +5607,8 @@ StopConflict3T15 = ArriveStorage.0.3.15 || ArriveStorage.1.3.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96894K
-Composed in 353ms
+-- States: 16 Transitions: 105 Memory used: 127630K
+Composed in 534ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T15 minimising...
@@ -5629,12 +5629,12 @@ StopConflict4T15 = ArriveStorage.0.4.15 || ArriveStorage.1.4.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97129K
-Composed in 361ms
+-- States: 16 Transitions: 105 Memory used: 127427K
+Composed in 570ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T15 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict4T15)
 DFA(StopConflict4T15) has 3 states.
 Tau reduction ON
@@ -5651,8 +5651,8 @@ StopConflict5T15 = ArriveStorage.0.5.15 || ArriveStorage.1.5.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96970K
-Composed in 341ms
+-- States: 16 Transitions: 105 Memory used: 127657K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T15 minimising...
@@ -5673,8 +5673,8 @@ StopConflict6T15 = ArriveStorage.0.6.15 || ArriveStorage.1.6.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 96992K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 131880K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T15 minimising...
@@ -5695,8 +5695,8 @@ StopConflict7T15 = ArriveStorage.0.7.15 || ArriveStorage.1.7.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97105K
-Composed in 335ms
+-- States: 16 Transitions: 105 Memory used: 127470K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T15 minimising...
@@ -5717,8 +5717,8 @@ StopConflict8T15 = ArriveStorage.0.8.15 || ArriveStorage.1.8.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97033K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127713K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T15 minimising...
@@ -5739,12 +5739,12 @@ StopConflict9T15 = ArriveStorage.0.9.15 || ArriveStorage.1.9.15 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97133K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 127867K
+Composed in 558ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T15 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict9T15)
 DFA(StopConflict9T15) has 3 states.
 Tau reduction ON
@@ -5761,8 +5761,8 @@ StopConflict10T15 = ArriveStorage.0.10.15 || ArriveStorage.1.10.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97088K
-Composed in 342ms
+-- States: 16 Transitions: 105 Memory used: 127763K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T15 minimising...
@@ -5783,8 +5783,8 @@ StopConflict11T15 = ArriveStorage.0.11.15 || ArriveStorage.1.11.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97109K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 127763K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T15 minimising...
@@ -5805,8 +5805,8 @@ StopConflict12T15 = ArriveStorage.0.12.15 || ArriveStorage.1.12.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97116K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127825K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T15 minimising...
@@ -5827,12 +5827,12 @@ StopConflict13T15 = ArriveStorage.0.13.15 || ArriveStorage.1.13.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97165K
-Composed in 332ms
+-- States: 16 Transitions: 105 Memory used: 127575K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T15 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict13T15)
 DFA(StopConflict13T15) has 3 states.
 Tau reduction ON
@@ -5849,8 +5849,8 @@ StopConflict14T15 = ArriveStorage.0.14.15 || ArriveStorage.1.14.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97187K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 127809K
+Composed in 544ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T15 minimising...
@@ -5871,8 +5871,8 @@ StopConflict15T0 = ArriveStorage.0.15.0 || ArriveStorage.1.15.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97160K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 127825K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T0 minimising...
@@ -5893,8 +5893,8 @@ StopConflict15T1 = ArriveStorage.0.15.1 || ArriveStorage.1.15.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97169K
-Composed in 359ms
+-- States: 16 Transitions: 105 Memory used: 127887K
+Composed in 545ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T1 minimising...
@@ -5915,12 +5915,12 @@ StopConflict15T2 = ArriveStorage.0.15.2 || ArriveStorage.1.15.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97663K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 127859K
+Composed in 542ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T2 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict15T2)
 DFA(StopConflict15T2) has 3 states.
 Tau reduction ON
@@ -5937,12 +5937,12 @@ StopConflict15T3 = ArriveStorage.0.15.3 || ArriveStorage.1.15.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97259K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 127680K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T3 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict15T3)
 DFA(StopConflict15T3) has 3 states.
 Tau reduction ON
@@ -5959,12 +5959,12 @@ StopConflict15T4 = ArriveStorage.0.15.4 || ArriveStorage.1.15.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97279K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 127886K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T4 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict15T4)
 DFA(StopConflict15T4) has 3 states.
 Tau reduction ON
@@ -5981,8 +5981,8 @@ StopConflict15T5 = ArriveStorage.0.15.5 || ArriveStorage.1.15.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97297K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 127933K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T5 minimising...
@@ -6003,8 +6003,8 @@ StopConflict15T6 = ArriveStorage.0.15.6 || ArriveStorage.1.15.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97388K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127887K
+Composed in 575ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T6 minimising...
@@ -6025,8 +6025,8 @@ StopConflict15T7 = ArriveStorage.0.15.7 || ArriveStorage.1.15.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97327K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 127909K
+Composed in 571ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T7 minimising...
@@ -6035,7 +6035,7 @@ make DFA(StopConflict15T7)
 DFA(StopConflict15T7) has 3 states.
 Tau reduction ON
 StopConflict15T7 minimising...
-Minimised States: 3 in 0ms
+Minimised States: 3 in 1ms
 Formula !StopConflict15T8 = (true U (ArriveStorage.0.15.8 & ArriveStorage.1.15.8))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -6047,8 +6047,8 @@ StopConflict15T8 = ArriveStorage.0.15.8 || ArriveStorage.1.15.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97328K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 127972K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T8 minimising...
@@ -6069,8 +6069,8 @@ StopConflict15T9 = ArriveStorage.0.15.9 || ArriveStorage.1.15.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97384K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 127987K
+Composed in 568ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T9 minimising...
@@ -6091,8 +6091,8 @@ StopConflict15T10 = ArriveStorage.0.15.10 || ArriveStorage.1.15.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97357K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 127959K
+Composed in 560ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T10 minimising...
@@ -6113,12 +6113,12 @@ StopConflict15T11 = ArriveStorage.0.15.11 || ArriveStorage.1.15.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97592K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 127982K
+Composed in 540ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T11 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict15T11)
 DFA(StopConflict15T11) has 3 states.
 Tau reduction ON
@@ -6135,17 +6135,17 @@ StopConflict15T12 = ArriveStorage.0.15.12 || ArriveStorage.1.15.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97449K
-Composed in 343ms
+-- States: 16 Transitions: 105 Memory used: 127999K
+Composed in 543ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T12 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict15T12)
 DFA(StopConflict15T12) has 3 states.
 Tau reduction ON
 StopConflict15T12 minimising...
-Minimised States: 3 in 1ms
+Minimised States: 3 in 0ms
 Formula !StopConflict15T13 = (true U (ArriveStorage.0.15.13 & ArriveStorage.1.15.13))
 GBA 2 states 3 transitions
 Buchi automata:
@@ -6157,12 +6157,12 @@ StopConflict15T13 = ArriveStorage.0.15.13 || ArriveStorage.1.15.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97458K
-Composed in 354ms
+-- States: 16 Transitions: 105 Memory used: 127820K
+Composed in 574ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T13 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict15T13)
 DFA(StopConflict15T13) has 3 states.
 Tau reduction ON
@@ -6179,8 +6179,8 @@ StopConflict15T14 = ArriveStorage.0.15.14 || ArriveStorage.1.15.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97460K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 128031K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T14 minimising...
@@ -6201,8 +6201,8 @@ StopConflict15T15 = ArriveStorage.0.15.15 || ArriveStorage.1.15.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97466K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 128170K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T15 minimising...
@@ -6223,8 +6223,8 @@ StopConflict0T16 = ArriveStorage.0.0.16 || ArriveStorage.1.0.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97547K
-Composed in 347ms
+-- States: 16 Transitions: 105 Memory used: 128111K
+Composed in 539ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict0T16 minimising...
@@ -6245,8 +6245,8 @@ StopConflict1T16 = ArriveStorage.0.1.16 || ArriveStorage.1.1.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97541K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 128076K
+Composed in 566ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict1T16 minimising...
@@ -6267,8 +6267,8 @@ StopConflict2T16 = ArriveStorage.0.2.16 || ArriveStorage.1.2.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97923K
-Composed in 359ms
+-- States: 16 Transitions: 105 Memory used: 128095K
+Composed in 538ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict2T16 minimising...
@@ -6289,8 +6289,8 @@ StopConflict3T16 = ArriveStorage.0.3.16 || ArriveStorage.1.3.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97550K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 128120K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict3T16 minimising...
@@ -6311,8 +6311,8 @@ StopConflict4T16 = ArriveStorage.0.4.16 || ArriveStorage.1.4.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97572K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 128138K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict4T16 minimising...
@@ -6333,8 +6333,8 @@ StopConflict5T16 = ArriveStorage.0.5.16 || ArriveStorage.1.5.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97892K
-Composed in 345ms
+-- States: 16 Transitions: 105 Memory used: 128153K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict5T16 minimising...
@@ -6355,12 +6355,12 @@ StopConflict6T16 = ArriveStorage.0.6.16 || ArriveStorage.1.6.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97732K
-Composed in 369ms
+-- States: 16 Transitions: 105 Memory used: 127948K
+Composed in 577ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict6T16 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 2ms
 make DFA(StopConflict6T16)
 DFA(StopConflict6T16) has 3 states.
 Tau reduction ON
@@ -6377,8 +6377,8 @@ StopConflict7T16 = ArriveStorage.0.7.16 || ArriveStorage.1.7.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97669K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 128179K
+Composed in 574ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict7T16 minimising...
@@ -6399,8 +6399,8 @@ StopConflict8T16 = ArriveStorage.0.8.16 || ArriveStorage.1.8.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97702K
-Composed in 340ms
+-- States: 16 Transitions: 105 Memory used: 128170K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict8T16 minimising...
@@ -6421,8 +6421,8 @@ StopConflict9T16 = ArriveStorage.0.9.16 || ArriveStorage.1.9.16 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97724K
-Composed in 355ms
+-- States: 16 Transitions: 105 Memory used: 128194K
+Composed in 554ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict9T16 minimising...
@@ -6443,8 +6443,8 @@ StopConflict10T16 = ArriveStorage.0.10.16 || ArriveStorage.1.10.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97761K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 127992K
+Composed in 580ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict10T16 minimising...
@@ -6465,8 +6465,8 @@ StopConflict11T16 = ArriveStorage.0.11.16 || ArriveStorage.1.11.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97719K
-Composed in 370ms
+-- States: 16 Transitions: 105 Memory used: 128235K
+Composed in 556ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict11T16 minimising...
@@ -6487,8 +6487,8 @@ StopConflict12T16 = ArriveStorage.0.12.16 || ArriveStorage.1.12.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97775K
-Composed in 352ms
+-- States: 16 Transitions: 105 Memory used: 128279K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict12T16 minimising...
@@ -6509,12 +6509,12 @@ StopConflict13T16 = ArriveStorage.0.13.16 || ArriveStorage.1.13.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97735K
-Composed in 363ms
+-- States: 16 Transitions: 105 Memory used: 128449K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict13T16 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict13T16)
 DFA(StopConflict13T16) has 3 states.
 Tau reduction ON
@@ -6531,8 +6531,8 @@ StopConflict14T16 = ArriveStorage.0.14.16 || ArriveStorage.1.14.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97818K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 128286K
+Composed in 546ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict14T16 minimising...
@@ -6553,8 +6553,8 @@ StopConflict15T16 = ArriveStorage.0.15.16 || ArriveStorage.1.15.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97953K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 128308K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict15T16 minimising...
@@ -6575,8 +6575,8 @@ StopConflict16T0 = ArriveStorage.0.16.0 || ArriveStorage.1.16.0 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97861K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 128430K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T0 minimising...
@@ -6597,12 +6597,12 @@ StopConflict16T1 = ArriveStorage.0.16.1 || ArriveStorage.1.16.1 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97998K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 129219K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T1 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict16T1)
 DFA(StopConflict16T1) has 3 states.
 Tau reduction ON
@@ -6619,12 +6619,12 @@ StopConflict16T2 = ArriveStorage.0.16.2 || ArriveStorage.1.16.2 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97904K
-Composed in 356ms
+-- States: 16 Transitions: 105 Memory used: 128339K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T2 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict16T2)
 DFA(StopConflict16T2) has 3 states.
 Tau reduction ON
@@ -6641,12 +6641,12 @@ StopConflict16T3 = ArriveStorage.0.16.3 || ArriveStorage.1.16.3 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97925K
-Composed in 358ms
+-- States: 16 Transitions: 105 Memory used: 128138K
+Composed in 559ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T3 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 3ms
 make DFA(StopConflict16T3)
 DFA(StopConflict16T3) has 3 states.
 Tau reduction ON
@@ -6663,8 +6663,8 @@ StopConflict16T4 = ArriveStorage.0.16.4 || ArriveStorage.1.16.4 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97882K
-Composed in 349ms
+-- States: 16 Transitions: 105 Memory used: 128371K
+Composed in 548ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T4 minimising...
@@ -6685,8 +6685,8 @@ StopConflict16T5 = ArriveStorage.0.16.5 || ArriveStorage.1.16.5 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97939K
-Composed in 357ms
+-- States: 16 Transitions: 105 Memory used: 128390K
+Composed in 584ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T5 minimising...
@@ -6707,8 +6707,8 @@ StopConflict16T6 = ArriveStorage.0.16.6 || ArriveStorage.1.16.6 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97960K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 128413K
+Composed in 553ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T6 minimising...
@@ -6729,8 +6729,8 @@ StopConflict16T7 = ArriveStorage.0.16.7 || ArriveStorage.1.16.7 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97987K
-Composed in 350ms
+-- States: 16 Transitions: 105 Memory used: 128488K
+Composed in 551ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T7 minimising...
@@ -6751,8 +6751,8 @@ StopConflict16T8 = ArriveStorage.0.16.8 || ArriveStorage.1.16.8 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97961K
-Composed in 335ms
+-- States: 16 Transitions: 105 Memory used: 128258K
+Composed in 547ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T8 minimising...
@@ -6773,8 +6773,8 @@ StopConflict16T9 = ArriveStorage.0.16.9 || ArriveStorage.1.16.9 || SYNC || StopC
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 97981K
-Composed in 337ms
+-- States: 16 Transitions: 105 Memory used: 128501K
+Composed in 532ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T9 minimising...
@@ -6795,8 +6795,8 @@ StopConflict16T10 = ArriveStorage.0.16.10 || ArriveStorage.1.16.10 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98067K
-Composed in 339ms
+-- States: 16 Transitions: 105 Memory used: 129631K
+Composed in 561ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T10 minimising...
@@ -6817,12 +6817,12 @@ StopConflict16T11 = ArriveStorage.0.16.11 || ArriveStorage.1.16.11 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98073K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 128458K
+Composed in 555ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T11 minimising...
-Minimised States: 5 in 0ms
+Minimised States: 5 in 1ms
 make DFA(StopConflict16T11)
 DFA(StopConflict16T11) has 3 states.
 Tau reduction ON
@@ -6839,8 +6839,8 @@ StopConflict16T12 = ArriveStorage.0.16.12 || ArriveStorage.1.16.12 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98124K
-Composed in 346ms
+-- States: 16 Transitions: 105 Memory used: 128493K
+Composed in 569ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T12 minimising...
@@ -6861,8 +6861,8 @@ StopConflict16T13 = ArriveStorage.0.16.13 || ArriveStorage.1.16.13 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98102K
-Composed in 344ms
+-- States: 16 Transitions: 105 Memory used: 128489K
+Composed in 531ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T13 minimising...
@@ -6883,8 +6883,8 @@ StopConflict16T14 = ArriveStorage.0.16.14 || ArriveStorage.1.16.14 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98086K
-Composed in 365ms
+-- States: 16 Transitions: 105 Memory used: 128506K
+Composed in 550ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T14 minimising...
@@ -6905,12 +6905,12 @@ StopConflict16T15 = ArriveStorage.0.16.15 || ArriveStorage.1.16.15 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 98157K
-Composed in 365ms
+-- States: 16 Transitions: 105 Memory used: 128527K
+Composed in 549ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T15 minimising...
-Minimised States: 5 in 1ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict16T15)
 DFA(StopConflict16T15) has 3 states.
 Tau reduction ON
@@ -6927,28 +6927,798 @@ StopConflict16T16 = ArriveStorage.0.16.16 || ArriveStorage.1.16.16 || SYNC || St
 State Space:
  2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 16 Transitions: 105 Memory used: 99199K
-Composed in 348ms
+-- States: 16 Transitions: 105 Memory used: 130805K
+Composed in 564ms
 After Tau elimination = 8 state
 Tau reduction ON
 StopConflict16T16 minimising...
-Minimised States: 5 in 4ms
+Minimised States: 5 in 0ms
 make DFA(StopConflict16T16)
 DFA(StopConflict16T16) has 3 states.
 Tau reduction ON
 StopConflict16T16 minimising...
 Minimised States: 3 in 0ms
+Formula !StopConflict0T17 = (true U (ArriveStorage.0.0.17 & ArriveStorage.1.0.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict0T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.0.17&ArriveStorage.1.0.17 -> S1).
 Composition:
-AllManager = ALLCONT || StopConflict14T4 || StopConflict1T0 || StopConflict11T13 || StopConflict6T2 || StopConflict11T7 || StopConflict1T10 || StopConflict7T0 || StopConflict5T11 || StopConflict1T14 || StopConflict14T12 || StopConflict16T7 || StopConflict1T3 || StopConflict8T8 || StopConflict0T1 || StopConflict9T3 || StopConflict16T2 || StopConflict11T0 || StopConflict15T7 || StopConflict0T14 || StopConflict9T8 || StopConflict6T15 || StopConflict10T4 || StopConflict11T15 || StopConflict1T16 || StopConflict15T3 || StopConflict1T8 || StopConflict2T7 || StopConflict8T1 || StopConflict0T11 || StopConflict3T7 || StopConflict16T16 || StopConflict7T5 || StopConflict5T1 || StopConflict4T5 || StopConflict7T7 || StopConflict16T15 || StopConflict10T1 || StopConflict14T13 || StopConflict12T10 || StopConflict16T8 || StopConflict9T15 || StopConflict5T14 || StopConflict9T10 || StopConflict8T7 || StopConflict11T5 || StopConflict7T10 || StopConflict3T14 || StopConflict15T2 || StopConflict13T1 || StopConflict7T4 || StopConflict4T3 || StopConflict4T4 || StopConflict4T14 || StopConflict2T2 || StopConflict3T4 || StopConflict3T11 || StopConflict2T4 || StopConflict12T9 || StopConflict7T11 || StopConflict13T13 || StopConflict9T4 || StopConflict11T4 || StopConflict2T0 || StopConflict11T16 || StopConflict14T15 || StopConflict0T16 || StopConflict6T6 || StopConflict9T9 || StopConflict3T0 || StopConflict16T10 || StopConflict6T1 || StopConflict1T6 || StopConflict5T15 || StopConflict11T2 || StopConflict7T14 || StopConflict2T5 || StopConflict15T4 || StopConflict5T9 || StopConflict1T5 || StopConflict5T12 || StopConflict16T14 || StopConflict3T5 || StopConflict13T2 || StopConflict15T11 || StopConflict14T9 || StopConflict16T13 || StopConflict4T2 || StopConflict13T3 || StopConflict0T0 || StopConflict10T9 || StopConflict13T8 || StopConflict8T4 || StopConflict15T15 || StopConflict16T12 || StopConflict15T0 || StopConflict9T16 || StopConflict0T9 || StopConflict13T0 || StopConflict3T15 || StopConflict1T15 || StopConflict9T0 || StopConflict14T14 || StopConflict5T0 || StopConflict2T8 || StopConflict10T7 || StopConflict7T15 || StopConflict14T10 || StopConflict12T0 || StopConflict15T1 || StopConflict15T6 || StopConflict11T11 || StopConflict4T12 || StopConflict4T11 || StopConflict10T14 || StopConflict7T8 || StopConflict8T10 || StopConflict0T7 || StopConflict7T6 || StopConflict15T9 || StopConflict8T14 || StopConflict8T15 || StopConflict15T10 || StopConflict5T6 || StopConflict1T13 || StopConflict12T6 || StopConflict4T8 || StopConflict0T5 || StopConflict10T0 || StopConflict16T6 || StopConflict6T0 || StopConflict10T15 || StopConflict3T9 || StopConflict10T6 || StopConflict4T16 || StopConflict10T10 || StopConflict4T9 || StopConflict16T9 || StopConflict4T7 || StopConflict14T5 || StopConflict0T2 || StopConflict5T5 || StopConflict0T15 || StopConflict6T4 || StopConflict9T12 || StopConflict2T3 || StopConflict14T2 || StopConflict13T6 || StopConflict2T13 || StopConflict9T14 || StopConflict5T2 || StopConflict11T14 || StopConflict8T0 || StopConflict0T6 || StopConflict13T15 || StopConflict2T9 || StopConflict9T11 || StopConflict8T16 || StopConflict13T12 || StopConflict0T3 || StopConflict6T5 || StopConflict12T4 || StopConflict8T13 || StopConflict4T15 || StopConflict14T8 || StopConflict13T5 || StopConflict6T3 || StopConflict5T16 || StopConflict2T6 || StopConflict5T8 || StopConflict5T4 || StopConflict9T1 || StopConflict11T6 || StopConflict4T6 || StopConflict5T13 || StopConflict9T6 || StopConflict8T12 || StopConflict6T14 || StopConflict15T16 || StopConflict3T12 || StopConflict11T12 || StopConflict1T4 || StopConflict2T11 || StopConflict6T10 || StopConflict12T5 || StopConflict4T13 || StopConflict16T1 || StopConflict16T4 || StopConflict3T10 || StopConflict7T12 || StopConflict3T13 || StopConflict1T11 || StopConflict9T5 || StopConflict6T11 || StopConflict13T11 || StopConflict3T2 || StopConflict1T1 || StopConflict15T12 || StopConflict12T16 || StopConflict16T0 || StopConflict11T1 || StopConflict16T11 || StopConflict12T14 || StopConflict1T2 || StopConflict2T10 || StopConflict11T8 || StopConflict1T7 || StopConflict10T3 || StopConflict13T16 || StopConflict14T3 || StopConflict14T0 || StopConflict8T9 || StopConflict6T9 || StopConflict6T13 || StopConflict3T8 || StopConflict8T11 || StopConflict12T3 || StopConflict7T13 || StopConflict6T16 || StopConflict7T1 || StopConflict12T12 || StopConflict4T1 || StopConflict11T3 || StopConflict11T9 || StopConflict4T10 || StopConflict10T13 || StopConflict12T13 || StopConflict1T12 || StopConflict12T11 || StopConflict10T16 || StopConflict12T2 || StopConflict9T7 || StopConflict12T7 || StopConflict15T14 || StopConflict7T3 || StopConflict15T5 || StopConflict0T4 || StopConflict8T3 || StopConflict10T2 || StopConflict0T10 || StopConflict5T10 || StopConflict12T8 || StopConflict14T16 || StopConflict2T16 || StopConflict2T15 || StopConflict2T1 || StopConflict15T13 || StopConflict10T11 || StopConflict16T5 || StopConflict7T16 || StopConflict16T3 || StopConflict6T8 || StopConflict0T12 || StopConflict3T3 || StopConflict11T10 || StopConflict13T14 || StopConflict10T5 || StopConflict7T9 || StopConflict13T10 || StopConflict10T12 || StopConflict1T9 || StopConflict13T4 || StopConflict15T8 || StopConflict14T1 || StopConflict6T12 || StopConflict3T6 || StopConflict13T9 || StopConflict12T15 || StopConflict2T14 || StopConflict14T6 || StopConflict13T7 || StopConflict12T1 || StopConflict7T2 || StopConflict2T12 || StopConflict14T11 || StopConflict3T16 || StopConflict8T6 || StopConflict14T7 || StopConflict0T8 || StopConflict6T7 || StopConflict0T13 || StopConflict9T2 || StopConflict8T2 || StopConflict10T8 || StopConflict8T5 || StopConflict5T7 || StopConflict4T0 || StopConflict3T1 || StopConflict5T3 || StopConflict9T13
+StopConflict0T17 = ArriveStorage.0.0.17 || ArriveStorage.1.0.17 || SYNC || StopConflict0T17
 State Space:
- 12249 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 = 2 ** 592
+ 2 * 2 * 2 * 2 = 2 ** 4
 Composing...
--- States: 10000 Transitions: 21349 Memory used: 221365K
--- States: 11651 Transitions: 25005 Memory used: 290007K
-Composed in 797ms
+-- States: 16 Transitions: 105 Memory used: 128552K
+Composed in 543ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict0T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict0T17)
+DFA(StopConflict0T17) has 3 states.
+Tau reduction ON
+StopConflict0T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict1T17 = (true U (ArriveStorage.0.1.17 & ArriveStorage.1.1.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict1T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.1.17&ArriveStorage.1.1.17 -> S1).
+Composition:
+StopConflict1T17 = ArriveStorage.0.1.17 || ArriveStorage.1.1.17 || SYNC || StopConflict1T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128572K
+Composed in 657ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict1T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict1T17)
+DFA(StopConflict1T17) has 3 states.
+Tau reduction ON
+StopConflict1T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict2T17 = (true U (ArriveStorage.0.2.17 & ArriveStorage.1.2.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict2T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.2.17&ArriveStorage.1.2.17 -> S1).
+Composition:
+StopConflict2T17 = ArriveStorage.0.2.17 || ArriveStorage.1.2.17 || SYNC || StopConflict2T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128728K
+Composed in 546ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict2T17 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict2T17)
+DFA(StopConflict2T17) has 3 states.
+Tau reduction ON
+StopConflict2T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict3T17 = (true U (ArriveStorage.0.3.17 & ArriveStorage.1.3.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict3T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.3.17&ArriveStorage.1.3.17 -> S1).
+Composition:
+StopConflict3T17 = ArriveStorage.0.3.17 || ArriveStorage.1.3.17 || SYNC || StopConflict3T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128612K
+Composed in 561ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict3T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict3T17)
+DFA(StopConflict3T17) has 3 states.
+Tau reduction ON
+StopConflict3T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict4T17 = (true U (ArriveStorage.0.4.17 & ArriveStorage.1.4.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict4T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.4.17&ArriveStorage.1.4.17 -> S1).
+Composition:
+StopConflict4T17 = ArriveStorage.0.4.17 || ArriveStorage.1.4.17 || SYNC || StopConflict4T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128630K
+Composed in 547ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict4T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict4T17)
+DFA(StopConflict4T17) has 3 states.
+Tau reduction ON
+StopConflict4T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict5T17 = (true U (ArriveStorage.0.5.17 & ArriveStorage.1.5.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict5T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.5.17&ArriveStorage.1.5.17 -> S1).
+Composition:
+StopConflict5T17 = ArriveStorage.0.5.17 || ArriveStorage.1.5.17 || SYNC || StopConflict5T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128703K
+Composed in 550ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict5T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict5T17)
+DFA(StopConflict5T17) has 3 states.
+Tau reduction ON
+StopConflict5T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict6T17 = (true U (ArriveStorage.0.6.17 & ArriveStorage.1.6.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict6T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.6.17&ArriveStorage.1.6.17 -> S1).
+Composition:
+StopConflict6T17 = ArriveStorage.0.6.17 || ArriveStorage.1.6.17 || SYNC || StopConflict6T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128831K
+Composed in 571ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict6T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict6T17)
+DFA(StopConflict6T17) has 3 states.
+Tau reduction ON
+StopConflict6T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict7T17 = (true U (ArriveStorage.0.7.17 & ArriveStorage.1.7.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict7T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.7.17&ArriveStorage.1.7.17 -> S1).
+Composition:
+StopConflict7T17 = ArriveStorage.0.7.17 || ArriveStorage.1.7.17 || SYNC || StopConflict7T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128684K
+Composed in 527ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict7T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict7T17)
+DFA(StopConflict7T17) has 3 states.
+Tau reduction ON
+StopConflict7T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict8T17 = (true U (ArriveStorage.0.8.17 & ArriveStorage.1.8.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict8T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.8.17&ArriveStorage.1.8.17 -> S1).
+Composition:
+StopConflict8T17 = ArriveStorage.0.8.17 || ArriveStorage.1.8.17 || SYNC || StopConflict8T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128706K
+Composed in 558ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict8T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict8T17)
+DFA(StopConflict8T17) has 3 states.
+Tau reduction ON
+StopConflict8T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict9T17 = (true U (ArriveStorage.0.9.17 & ArriveStorage.1.9.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict9T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.9.17&ArriveStorage.1.9.17 -> S1).
+Composition:
+StopConflict9T17 = ArriveStorage.0.9.17 || ArriveStorage.1.9.17 || SYNC || StopConflict9T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128725K
+Composed in 567ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict9T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict9T17)
+DFA(StopConflict9T17) has 3 states.
+Tau reduction ON
+StopConflict9T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict10T17 = (true U (ArriveStorage.0.10.17 & ArriveStorage.1.10.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict10T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.10.17&ArriveStorage.1.10.17 -> S1).
+Composition:
+StopConflict10T17 = ArriveStorage.0.10.17 || ArriveStorage.1.10.17 || SYNC || StopConflict10T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128796K
+Composed in 538ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict10T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict10T17)
+DFA(StopConflict10T17) has 3 states.
+Tau reduction ON
+StopConflict10T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict11T17 = (true U (ArriveStorage.0.11.17 & ArriveStorage.1.11.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict11T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.11.17&ArriveStorage.1.11.17 -> S1).
+Composition:
+StopConflict11T17 = ArriveStorage.0.11.17 || ArriveStorage.1.11.17 || SYNC || StopConflict11T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128531K
+Composed in 571ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict11T17 minimising...
+Minimised States: 5 in 5ms
+make DFA(StopConflict11T17)
+DFA(StopConflict11T17) has 3 states.
+Tau reduction ON
+StopConflict11T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict12T17 = (true U (ArriveStorage.0.12.17 & ArriveStorage.1.12.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict12T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.12.17&ArriveStorage.1.12.17 -> S1).
+Composition:
+StopConflict12T17 = ArriveStorage.0.12.17 || ArriveStorage.1.12.17 || SYNC || StopConflict12T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128761K
+Composed in 537ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict12T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict12T17)
+DFA(StopConflict12T17) has 3 states.
+Tau reduction ON
+StopConflict12T17 minimising...
+Minimised States: 3 in 1ms
+Formula !StopConflict13T17 = (true U (ArriveStorage.0.13.17 & ArriveStorage.1.13.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict13T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.13.17&ArriveStorage.1.13.17 -> S1).
+Composition:
+StopConflict13T17 = ArriveStorage.0.13.17 || ArriveStorage.1.13.17 || SYNC || StopConflict13T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128779K
+Composed in 541ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict13T17 minimising...
+Minimised States: 5 in 2ms
+make DFA(StopConflict13T17)
+DFA(StopConflict13T17) has 3 states.
+Tau reduction ON
+StopConflict13T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict14T17 = (true U (ArriveStorage.0.14.17 & ArriveStorage.1.14.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict14T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.14.17&ArriveStorage.1.14.17 -> S1).
+Composition:
+StopConflict14T17 = ArriveStorage.0.14.17 || ArriveStorage.1.14.17 || SYNC || StopConflict14T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128887K
+Composed in 529ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict14T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict14T17)
+DFA(StopConflict14T17) has 3 states.
+Tau reduction ON
+StopConflict14T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict15T17 = (true U (ArriveStorage.0.15.17 & ArriveStorage.1.15.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict15T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.15.17&ArriveStorage.1.15.17 -> S1).
+Composition:
+StopConflict15T17 = ArriveStorage.0.15.17 || ArriveStorage.1.15.17 || SYNC || StopConflict15T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128598K
+Composed in 544ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict15T17 minimising...
+Minimised States: 5 in 2ms
+make DFA(StopConflict15T17)
+DFA(StopConflict15T17) has 3 states.
+Tau reduction ON
+StopConflict15T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict16T17 = (true U (ArriveStorage.0.16.17 & ArriveStorage.1.16.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict16T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.16.17&ArriveStorage.1.16.17 -> S1).
+Composition:
+StopConflict16T17 = ArriveStorage.0.16.17 || ArriveStorage.1.16.17 || SYNC || StopConflict16T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128831K
+Composed in 561ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict16T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict16T17)
+DFA(StopConflict16T17) has 3 states.
+Tau reduction ON
+StopConflict16T17 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T0 = (true U (ArriveStorage.0.17.0 & ArriveStorage.1.17.0))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T0 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.0&ArriveStorage.1.17.0 -> S1).
+Composition:
+StopConflict17T0 = ArriveStorage.0.17.0 || ArriveStorage.1.17.0 || SYNC || StopConflict17T0
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128851K
+Composed in 563ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T0 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T0)
+DFA(StopConflict17T0) has 3 states.
+Tau reduction ON
+StopConflict17T0 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T1 = (true U (ArriveStorage.0.17.1 & ArriveStorage.1.17.1))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T1 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.1&ArriveStorage.1.17.1 -> S1).
+Composition:
+StopConflict17T1 = ArriveStorage.0.17.1 || ArriveStorage.1.17.1 || SYNC || StopConflict17T1
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128867K
+Composed in 553ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T1 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T1)
+DFA(StopConflict17T1) has 3 states.
+Tau reduction ON
+StopConflict17T1 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T2 = (true U (ArriveStorage.0.17.2 & ArriveStorage.1.17.2))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T2 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.2&ArriveStorage.1.17.2 -> S1).
+Composition:
+StopConflict17T2 = ArriveStorage.0.17.2 || ArriveStorage.1.17.2 || SYNC || StopConflict17T2
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128889K
+Composed in 553ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T2 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T2)
+DFA(StopConflict17T2) has 3 states.
+Tau reduction ON
+StopConflict17T2 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T3 = (true U (ArriveStorage.0.17.3 & ArriveStorage.1.17.3))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T3 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.3&ArriveStorage.1.17.3 -> S1).
+Composition:
+StopConflict17T3 = ArriveStorage.0.17.3 || ArriveStorage.1.17.3 || SYNC || StopConflict17T3
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128937K
+Composed in 551ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T3 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T3)
+DFA(StopConflict17T3) has 3 states.
+Tau reduction ON
+StopConflict17T3 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T4 = (true U (ArriveStorage.0.17.4 & ArriveStorage.1.17.4))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T4 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.4&ArriveStorage.1.17.4 -> S1).
+Composition:
+StopConflict17T4 = ArriveStorage.0.17.4 || ArriveStorage.1.17.4 || SYNC || StopConflict17T4
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128925K
+Composed in 553ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T4 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T4)
+DFA(StopConflict17T4) has 3 states.
+Tau reduction ON
+StopConflict17T4 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T5 = (true U (ArriveStorage.0.17.5 & ArriveStorage.1.17.5))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T5 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.5&ArriveStorage.1.17.5 -> S1).
+Composition:
+StopConflict17T5 = ArriveStorage.0.17.5 || ArriveStorage.1.17.5 || SYNC || StopConflict17T5
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128754K
+Composed in 563ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T5 minimising...
+Minimised States: 5 in 2ms
+make DFA(StopConflict17T5)
+DFA(StopConflict17T5) has 3 states.
+Tau reduction ON
+StopConflict17T5 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T6 = (true U (ArriveStorage.0.17.6 & ArriveStorage.1.17.6))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T6 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.6&ArriveStorage.1.17.6 -> S1).
+Composition:
+StopConflict17T6 = ArriveStorage.0.17.6 || ArriveStorage.1.17.6 || SYNC || StopConflict17T6
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128959K
+Composed in 552ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T6 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T6)
+DFA(StopConflict17T6) has 3 states.
+Tau reduction ON
+StopConflict17T6 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T7 = (true U (ArriveStorage.0.17.7 & ArriveStorage.1.17.7))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T7 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.7&ArriveStorage.1.17.7 -> S1).
+Composition:
+StopConflict17T7 = ArriveStorage.0.17.7 || ArriveStorage.1.17.7 || SYNC || StopConflict17T7
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128983K
+Composed in 564ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T7 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T7)
+DFA(StopConflict17T7) has 3 states.
+Tau reduction ON
+StopConflict17T7 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T8 = (true U (ArriveStorage.0.17.8 & ArriveStorage.1.17.8))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T8 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.8&ArriveStorage.1.17.8 -> S1).
+Composition:
+StopConflict17T8 = ArriveStorage.0.17.8 || ArriveStorage.1.17.8 || SYNC || StopConflict17T8
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129030K
+Composed in 581ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T8 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T8)
+DFA(StopConflict17T8) has 3 states.
+Tau reduction ON
+StopConflict17T8 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T9 = (true U (ArriveStorage.0.17.9 & ArriveStorage.1.17.9))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T9 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.9&ArriveStorage.1.17.9 -> S1).
+Composition:
+StopConflict17T9 = ArriveStorage.0.17.9 || ArriveStorage.1.17.9 || SYNC || StopConflict17T9
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129017K
+Composed in 565ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T9 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T9)
+DFA(StopConflict17T9) has 3 states.
+Tau reduction ON
+StopConflict17T9 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T10 = (true U (ArriveStorage.0.17.10 & ArriveStorage.1.17.10))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T10 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.10&ArriveStorage.1.17.10 -> S1).
+Composition:
+StopConflict17T10 = ArriveStorage.0.17.10 || ArriveStorage.1.17.10 || SYNC || StopConflict17T10
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129066K
+Composed in 558ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T10 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T10)
+DFA(StopConflict17T10) has 3 states.
+Tau reduction ON
+StopConflict17T10 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T11 = (true U (ArriveStorage.0.17.11 & ArriveStorage.1.17.11))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T11 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.11&ArriveStorage.1.17.11 -> S1).
+Composition:
+StopConflict17T11 = ArriveStorage.0.17.11 || ArriveStorage.1.17.11 || SYNC || StopConflict17T11
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129090K
+Composed in 575ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T11 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T11)
+DFA(StopConflict17T11) has 3 states.
+Tau reduction ON
+StopConflict17T11 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T12 = (true U (ArriveStorage.0.17.12 & ArriveStorage.1.17.12))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T12 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.12&ArriveStorage.1.17.12 -> S1).
+Composition:
+StopConflict17T12 = ArriveStorage.0.17.12 || ArriveStorage.1.17.12 || SYNC || StopConflict17T12
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129229K
+Composed in 543ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T12 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T12)
+DFA(StopConflict17T12) has 3 states.
+Tau reduction ON
+StopConflict17T12 minimising...
+Minimised States: 3 in 1ms
+Formula !StopConflict17T13 = (true U (ArriveStorage.0.17.13 & ArriveStorage.1.17.13))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T13 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.13&ArriveStorage.1.17.13 -> S1).
+Composition:
+StopConflict17T13 = ArriveStorage.0.17.13 || ArriveStorage.1.17.13 || SYNC || StopConflict17T13
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 128935K
+Composed in 565ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T13 minimising...
+Minimised States: 5 in 3ms
+make DFA(StopConflict17T13)
+DFA(StopConflict17T13) has 3 states.
+Tau reduction ON
+StopConflict17T13 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T14 = (true U (ArriveStorage.0.17.14 & ArriveStorage.1.17.14))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T14 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.14&ArriveStorage.1.17.14 -> S1).
+Composition:
+StopConflict17T14 = ArriveStorage.0.17.14 || ArriveStorage.1.17.14 || SYNC || StopConflict17T14
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129140K
+Composed in 560ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T14 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T14)
+DFA(StopConflict17T14) has 3 states.
+Tau reduction ON
+StopConflict17T14 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T15 = (true U (ArriveStorage.0.17.15 & ArriveStorage.1.17.15))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T15 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.15&ArriveStorage.1.17.15 -> S1).
+Composition:
+StopConflict17T15 = ArriveStorage.0.17.15 || ArriveStorage.1.17.15 || SYNC || StopConflict17T15
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129164K
+Composed in 572ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T15 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T15)
+DFA(StopConflict17T15) has 3 states.
+Tau reduction ON
+StopConflict17T15 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T16 = (true U (ArriveStorage.0.17.16 & ArriveStorage.1.17.16))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T16 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.16&ArriveStorage.1.17.16 -> S1).
+Composition:
+StopConflict17T16 = ArriveStorage.0.17.16 || ArriveStorage.1.17.16 || SYNC || StopConflict17T16
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129181K
+Composed in 551ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T16 minimising...
+Minimised States: 5 in 1ms
+make DFA(StopConflict17T16)
+DFA(StopConflict17T16) has 3 states.
+Tau reduction ON
+StopConflict17T16 minimising...
+Minimised States: 3 in 0ms
+Formula !StopConflict17T17 = (true U (ArriveStorage.0.17.17 & ArriveStorage.1.17.17))
+GBA 2 states 3 transitions
+Buchi automata:
+StopConflict17T17 = S0,
+S1@ =(true -> S1),
+S0 =(true -> S0 |ArriveStorage.0.17.17&ArriveStorage.1.17.17 -> S1).
+Composition:
+StopConflict17T17 = ArriveStorage.0.17.17 || ArriveStorage.1.17.17 || SYNC || StopConflict17T17
+State Space:
+ 2 * 2 * 2 * 2 = 2 ** 4
+Composing...
+-- States: 16 Transitions: 105 Memory used: 129256K
+Composed in 556ms
+After Tau elimination = 8 state
+Tau reduction ON
+StopConflict17T17 minimising...
+Minimised States: 5 in 0ms
+make DFA(StopConflict17T17)
+DFA(StopConflict17T17) has 3 states.
+Tau reduction ON
+StopConflict17T17 minimising...
+Minimised States: 3 in 0ms
+Composition:
+AllManager = ALLCONT || StopConflict16T17 || StopConflict17T2 || StopConflict15T3 || StopConflict11T14 || StopConflict17T8 || StopConflict14T6 || StopConflict1T12 || StopConflict13T7 || StopConflict15T16 || StopConflict3T1 || StopConflict0T5 || StopConflict0T13 || StopConflict10T9 || StopConflict10T16 || StopConflict0T0 || StopConflict12T7 || StopConflict10T2 || StopConflict11T17 || StopConflict14T7 || StopConflict16T2 || StopConflict10T7 || StopConflict13T5 || StopConflict2T5 || StopConflict13T8 || StopConflict16T9 || StopConflict8T14 || StopConflict11T11 || StopConflict3T13 || StopConflict8T15 || StopConflict13T14 || StopConflict10T12 || StopConflict5T12 || StopConflict2T9 || StopConflict17T13 || StopConflict10T14 || StopConflict8T3 || StopConflict12T3 || StopConflict4T14 || StopConflict10T6 || StopConflict1T2 || StopConflict1T7 || StopConflict17T5 || StopConflict2T16 || StopConflict15T2 || StopConflict3T17 || StopConflict4T11 || StopConflict9T0 || StopConflict6T10 || StopConflict13T3 || StopConflict6T14 || StopConflict17T0 || StopConflict14T11 || StopConflict0T1 || StopConflict4T8 || StopConflict3T16 || StopConflict2T4 || StopConflict15T1 || StopConflict4T7 || StopConflict1T4 || StopConflict17T7 || StopConflict6T11 || StopConflict12T10 || StopConflict9T5 || StopConflict5T17 || StopConflict16T12 || StopConflict4T15 || StopConflict7T6 || StopConflict10T11 || StopConflict7T2 || StopConflict3T11 || StopConflict14T3 || StopConflict2T12 || StopConflict5T16 || StopConflict14T15 || StopConflict12T6 || StopConflict2T0 || StopConflict9T6 || StopConflict16T8 || StopConflict8T9 || StopConflict11T3 || StopConflict5T7 || StopConflict13T4 || StopConflict14T5 || StopConflict7T14 || StopConflict9T10 || StopConflict7T17 || StopConflict12T5 || StopConflict9T12 || StopConflict6T17 || StopConflict0T17 || StopConflict13T13 || StopConflict11T16 || StopConflict10T3 || StopConflict12T15 || StopConflict6T13 || StopConflict13T1 || StopConflict9T8 || StopConflict4T4 || StopConflict13T10 || StopConflict14T16 || StopConflict9T16 || StopConflict5T4 || StopConflict11T9 || StopConflict14T10 || StopConflict5T14 || StopConflict7T12 || StopConflict6T8 || StopConflict8T17 || StopConflict4T16 || StopConflict2T6 || StopConflict12T1 || StopConflict4T6 || StopConflict7T11 || StopConflict4T2 || StopConflict16T16 || StopConflict16T0 || StopConflict4T5 || StopConflict15T11 || StopConflict14T0 || StopConflict1T1 || StopConflict2T13 || StopConflict15T0 || StopConflict13T11 || StopConflict17T1 || StopConflict13T17 || StopConflict8T1 || StopConflict14T12 || StopConflict1T17 || StopConflict9T15 || StopConflict14T13 || StopConflict3T10 || StopConflict12T9 || StopConflict6T2 || StopConflict12T8 || StopConflict2T15 || StopConflict15T5 || StopConflict11T7 || StopConflict4T10 || StopConflict6T1 || StopConflict3T3 || StopConflict16T6 || StopConflict4T17 || StopConflict9T7 || StopConflict9T11 || StopConflict6T12 || StopConflict3T4 || StopConflict11T0 || StopConflict8T10 || StopConflict1T9 || StopConflict7T8 || StopConflict15T15 || StopConflict5T3 || StopConflict17T6 || StopConflict14T17 || StopConflict15T8 || StopConflict6T3 || StopConflict2T14 || StopConflict3T6 || StopConflict11T1 || StopConflict17T9 || StopConflict1T10 || StopConflict12T11 || StopConflict15T17 || StopConflict12T12 || StopConflict1T16 || StopConflict6T15 || StopConflict0T7 || StopConflict13T9 || StopConflict10T15 || StopConflict3T8 || StopConflict5T15 || StopConflict8T2 || StopConflict0T10 || StopConflict17T11 || StopConflict17T3 || StopConflict5T6 || StopConflict13T16 || StopConflict4T1 || StopConflict1T13 || StopConflict17T10 || StopConflict10T10 || StopConflict16T1 || StopConflict8T7 || StopConflict14T4 || StopConflict6T4 || StopConflict3T15 || StopConflict11T5 || StopConflict9T9 || StopConflict12T17 || StopConflict15T6 || StopConflict17T17 || StopConflict16T11 || StopConflict1T5 || StopConflict1T6 || StopConflict0T6 || StopConflict17T16 || StopConflict8T13 || StopConflict8T16 || StopConflict15T7 || StopConflict2T3 || StopConflict15T12 || StopConflict3T14 || StopConflict0T11 || StopConflict12T13 || StopConflict9T1 || StopConflict4T3 || StopConflict14T8 || StopConflict9T2 || StopConflict6T16 || StopConflict3T2 || StopConflict4T9 || StopConflict0T8 || StopConflict10T17 || StopConflict1T8 || StopConflict0T3 || StopConflict8T11 || StopConflict2T11 || StopConflict0T16 || StopConflict7T0 || StopConflict5T10 || StopConflict5T8 || StopConflict5T11 || StopConflict17T15 || StopConflict16T5 || StopConflict2T1 || StopConflict13T2 || StopConflict1T11 || StopConflict1T15 || StopConflict11T15 || StopConflict8T6 || StopConflict7T15 || StopConflict10T8 || StopConflict15T10 || StopConflict4T13 || StopConflict10T5 || StopConflict9T14 || StopConflict2T2 || StopConflict1T0 || StopConflict5T0 || StopConflict11T10 || StopConflict15T4 || StopConflict14T14 || StopConflict10T13 || StopConflict2T17 || StopConflict6T7 || StopConflict13T15 || StopConflict0T4 || StopConflict7T10 || StopConflict14T2 || StopConflict17T14 || StopConflict17T12 || StopConflict0T15 || StopConflict14T1 || StopConflict5T1 || StopConflict8T5 || StopConflict0T2 || StopConflict8T8 || StopConflict17T4 || StopConflict16T10 || StopConflict7T3 || StopConflict11T8 || StopConflict12T16 || StopConflict12T4 || StopConflict3T9 || StopConflict11T2 || StopConflict9T17 || StopConflict7T4 || StopConflict6T6 || StopConflict3T12 || StopConflict15T14 || StopConflict10T0 || StopConflict7T13 || StopConflict7T1 || StopConflict5T9 || StopConflict8T0 || StopConflict10T1 || StopConflict3T0 || StopConflict2T8 || StopConflict2T10 || StopConflict0T9 || StopConflict13T0 || StopConflict13T6 || StopConflict15T13 || StopConflict12T0 || StopConflict11T6 || StopConflict16T3 || StopConflict16T4 || StopConflict16T7 || StopConflict7T16 || StopConflict5T2 || StopConflict1T14 || StopConflict16T15 || StopConflict9T3 || StopConflict12T14 || StopConflict14T9 || StopConflict0T12 || StopConflict11T4 || StopConflict2T7 || StopConflict6T9 || StopConflict10T4 || StopConflict11T13 || StopConflict8T4 || StopConflict8T12 || StopConflict9T13 || StopConflict16T14 || StopConflict12T2 || StopConflict5T5 || StopConflict6T5 || StopConflict1T3 || StopConflict7T7 || StopConflict0T14 || StopConflict4T0 || StopConflict9T4 || StopConflict13T12 || StopConflict4T12 || StopConflict3T7 || StopConflict3T5 || StopConflict11T12 || StopConflict5T13 || StopConflict7T5 || StopConflict16T13 || StopConflict6T0 || StopConflict7T9 || StopConflict15T9
+State Space:
+ 13277 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 * 3 = 2 ** 662
+Composing...
+-- States: 10000 Transitions: 21370 Memory used: 310761K
+-- States: 12647 Transitions: 27173 Memory used: 360347K
+Composed in 1146ms
 Solving the LTS control problem.
-Environment states: 11652
-Game states: 11652
-Analysis time: 1259ms.
-Controller [11387] generated successfully.
+Environment states: 12648
+Game states: 12648
+Analysis time: 1603ms.
+Controller [12377] generated successfully.
 
